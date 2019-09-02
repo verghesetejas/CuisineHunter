@@ -1,0 +1,37 @@
+<div class="app-home">
+  <form class="app-form" #zomatoForm="ngForm" (ngSubmit)="onSubmit(zomatoForm, $event)" novalidate>
+    <div class="form-group">
+      <label for="searchKeyword">Query</label>
+      <input type="text" class="form-control" id="query" name="query" aria-describedby="queryHelp"
+        placeholder="Enter Query" ngModel #query="ngModel">
+      <small id="queryHelp" class="form-text text-muted">Search your favorite restaurants here.</small>
+    </div>
+    <button type="submit" class="btn btn-primary btn-search">Search</button>
+  </form>
+  <div class="table-content">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Rating</th>
+          <th scope="col">Address</th>
+          <th scope="col">Cuisines</th>
+          <th scope="col">Menu</th>
+          <th scope="col">Zomato Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let restaurant of restaurants">
+          <th scope="row">{{ restaurant.id }}</th>
+          <td>{{ restaurant.name }}</td>
+          <td>{{ restaurant.rating }}</td>
+          <td>{{ restaurant.address }}</td>
+          <td>{{ restaurant.cuisines }}</td>
+          <td>{{ restaurant.menu }}</td>
+          <td>{{ restaurant.link }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

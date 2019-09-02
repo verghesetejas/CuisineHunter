@@ -1,0 +1,15 @@
+.cuisine-hunter {
+  width: 100%;
+}
+
+.main-window {
+  display: flex;
+}
+
+.navigation-pane {
+  display: inline-block;
+}
+
+.page-content {
+  width: 100%;
+}
