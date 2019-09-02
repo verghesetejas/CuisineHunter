@@ -1,2 +1,6 @@
-# AgroPriceForecaster
-Real-time agricultural commodity price prediction using regression.
+# Cuisine Hunter
+Angular Project with Zomato API data.
+
+## Start
+Run the following command on Terminal or Command prompt -
+> npm start
