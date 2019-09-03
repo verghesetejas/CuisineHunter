@@ -1,7 +1,28 @@
+.app-home {
+  width: 100%;
+}
+
+.app-form {
+  margin-top: 10px;
+  background: red;
+  padding: 25px 25px 80px 25px;
+}
+
 .btn-search {
   float: right;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-color: #ffc107;
+  padding: 5px 50px;
 }
 
 .table-content {
-  margin-top: 80px;
+  margin-top: 10px;
+}
+
+.table .thead-dark th {
+  background-color: #343a40;
+  border-color: #343a40;
 }
