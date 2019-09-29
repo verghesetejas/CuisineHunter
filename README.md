@@ -16,3 +16,6 @@ Run the following commands on Terminal or Command prompt, to install dependencie
 ## Start
 Run the following command on Terminal or Command prompt, to start the application -
 > npm start
+
+Afterwards, To see your project in action. Open your browser and enter the url -
+> http://localhost:4200

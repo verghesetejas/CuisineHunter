@@ -1,5 +1,9 @@
-<div class="header">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="header" #headerComp>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-cuisine">
     <a class="navbar-brand" routerLink="home">{{ title }}</a>
+    <div class="div-right">
+      <a class="btn btn-outline-warning btn-cuisine" data-toggle="modal" data-target="#loginModal">Login/Sign-up</a>
+    </div>
   </nav>
 </div>
+<app-login></app-login>

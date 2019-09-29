@@ -1,0 +1,42 @@
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title text-center">Log-in</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm, $event)" novalidate>
+          <div class="d-flex flex-column text-center">
+            <div class="form-group">
+              <input class="login-input" type="text" name="username" placeholder="Username" ngModel #username="ngModel">
+              <input class="login-input" type="password" name="password" placeholder="Password" ngModel #password="ngModel">
+            </div>
+            <div>
+              <button type="submit" class="btn btn-info btn-block btn-round">Login</button>
+              <button type="button" class="btn btn-danger btn-block btn-round" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </form>
+        <div class="text-center text-muted delimiter">or use a social network</div>
+        <div class="d-flex justify-content-center social-buttons">
+          <button type="button" class="btn btn-secondary btn-round" title="Twitter">
+            <fa-icon [icon]="faTwitter"></fa-icon>
+          </button>
+          <button type="button" class="btn btn-secondary btn-round" title="Facebook">
+            <fa-icon [icon]="faFacebook"></fa-icon>
+          </button>
+          <button type="button" class="btn btn-secondary btn-round" title="Linkedin">
+            <fa-icon [icon]="faLinkedin"></fa-icon>
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="signup-section"><a routerLink="">New User Sign-Up</a></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,3 +2,20 @@
   text-transform: uppercase;
   font-weight: 600;
 }
+
+.navbar-cuisine {
+  position: relative;
+  background-color: #bb0f0f !important;
+}
+
+.div-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-cuisine {
+  color: white !important;
+  border: none;
+}

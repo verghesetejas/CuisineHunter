@@ -3,9 +3,19 @@
 }
 
 .app-form {
-  margin-top: 10px;
   background: red;
-  padding: 25px 25px 80px 25px;
+  padding: 25px 25px 15px 25px;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.input-flow {
+  border: none;
+  border-radius: 25px 0 0 25px;
+  padding-left: 20px;
+  box-shadow: none;
 }
 
 .btn-search {
@@ -15,7 +25,22 @@
   font-weight: 600;
   text-transform: uppercase;
   border-color: #ffc107;
+  border-radius: 0 25px 25px 0;
   padding: 5px 50px;
+}
+.btn-search:hover {
+  border-color: #e0a800;
+}
+.btn-search:not(:disabled):not(.disabled).active, .btn-search:not(:disabled):not(.disabled):active, .show>.btn-search.dropdown-toggle {
+  color: #212529;
+  background-color: #d39e00;
+  border-color: #d39e00;
+}
+.btn-search.focus, .btn-search:focus {
+  box-shadow: 3px 0 5px 3px rgba(255,193,7,.5);
+}
+.btn-search:not(:hover) {
+  box-shadow: none;
 }
 
 .table-content {
