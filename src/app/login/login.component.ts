@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, OnChanges, ViewChild, ElementRef, TemplateRef } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 import { AuthenticationService } from '../services/authentication.service';
@@ -7,12 +7,16 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+declare var jQuery: any;
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  @ViewChild('loginModal', { static: true }) loginModal: ElementRef;
+  @Output() loginStatus = new EventEmitter();
   user: Auth;
   username: string;
   password: string;
@@ -25,11 +29,7 @@ export class LoginComponent implements OnInit {
   /**
    * Initializes the login page
    */
-  ngOnInit() {
-    this.auth.getUserDetails().subscribe(data => {
-      this.user = data ? data[0] : this.user;
-    });
-  }
+  ngOnInit() {}
 
   /**
    * Handles the on submit button clicked event
@@ -38,19 +38,28 @@ export class LoginComponent implements OnInit {
    */
   onSubmit(loginForm: NgForm, event: Event): void {
     event.preventDefault();
-    this.username = loginForm.value.username;
-    this.password = loginForm.value.password;
-    this.triggerLogin();
+    this.triggerLogin(loginForm.value.username, loginForm.value.password);
   }
 
-  triggerLogin(): void {
-    if (this.username === this.user.userName) {
-      if (this.password === this.user.userPass) {
-        console.log("Access Granted!");
+  triggerLogin(username: string, password: string): void {
+    this.auth.getUserId(username, password).subscribe(userIdObj => {
+      this.auth.getUserDetails(userIdObj[0].userId).subscribe(data => {
+        this.user = data ? data[0] : this.user;
+        if (username === this.user.userName) {
+          if (password === this.user.userPass) {
+            console.log("Access Granted!");
+            jQuery(this.loginModal.nativeElement).modal('hide');
+            if (this.user) {
+              this.loginStatus.emit(this.user);
+            } else {
+              this.loginStatus.emit(null);
+            }
+            return;
+          }
+        }
+        console.log("Access Denied!");
         return;
-      }
-    }
-    console.log("Access Denied!");
-    return;
+      });
+    });
   }
 }

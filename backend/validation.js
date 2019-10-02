@@ -46,20 +46,37 @@ validate.validateUser = (req, res) => {
     });
 }
 
+validate.validateUserId = (req, res) => {
+    let user;
+    con.query(`
+        SELECT userId FROM users
+        WHERE userName = \"${req.params.userName}\"
+        AND userPass = \"${req.params.userPass}\"`, (err, result) => {
+        if (err) throw err;
+        console.log(result);
+        user = result;
+        if (!user) {
+            logger.log('Error 404: Invalid Username or Password value');
+            res.status(404).send('Error 404: Invalid Username or Password value');
+            return;
+        }
+        res.send(user);
+    });
+}
+
 validate.validatePostUser = (req, res) => {
     let user = req.body;
-    let sql = `
-        INSERT INTO users VALUES (
-            ${user.userId},
-            ${user.userName},
-            ${user.firstName},
-            ${user.lastName},
-            ${user.userPass},
-            ${user.userEmail},
-            ${user.userDP},
-            ${user.joinDate},
-        )
-    `;
+    let data = {
+        userId: user.userId,
+        userName: user.userName,
+        firstName: user.firstName,
+        lastName: user.lastName,
+        userPass: user.userPass,
+        userEmail: user.userEmail,
+        userDP: user.userDP,
+        joinDate: user.joinDate
+    };
+    let sql = `INSERT INTO users SET ${data}`;
     con.query(sql, (err, result) => {
         if (err) throw err;
         console.log(result);
@@ -79,15 +96,7 @@ validate.validatePostUser = (req, res) => {
 
 validate.validatePutUser = (req, res) => {
     let user = req.body;
-    let sql = `
-        SET @userId=${user.userId}; @userName=${user.userName}; @firstName=${user.firstName}; 
-        @lastName=${user.lastName}; @userPass=${user.userPass}; @userEmail=${user.userEmail};
-        @userDP=${user.userDP}; @joinDate=${user.joinDate}; CALL UserAddOrEdit(
-            @userId, @userName, @firstName, 
-            @lastName, @userPass, @userEmail,
-            @userDP, @joinDate
-        );
-    `;
+    let sql = `UPDATE users SET userName = \"${user.userName}\", firstName = \"${user.firstName}\", lastName = \"${user.lastName}\", userPass = \"${user.userPass}\", userEmail = \"${user.userEmail}\", userDP = \"${user.userDP}\", joinDate = \"${user.joinDate}\" WHERE userId = ${req.params.id}`;
     con.query(sql, (err, rows, result) => {
         if (err) throw err;
         console.log(result);

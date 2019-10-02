@@ -8,9 +8,13 @@ methods.getUsers = (req, res) => {
     validator.data.validateUsers(req, res);
 }
 
-methods.getUser = function (req, res) {
+methods.getUser = (req, res) => {
     validator.data.validateUser(req, res);
 }
+
+methods.getUserId = (req, res) => {
+    validator.data.validateUserId(req, res);
+};
 
 methods.postUser = function (req, res) {
     validator.data.validatePostUser(req, res);

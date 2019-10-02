@@ -11,9 +11,16 @@ export class AuthenticationService {
   constructor(private httpClient: HttpClient) { }
 
   /**
+   * Get User ID from username and password.
+   */
+  getUserId(userName: string, userPass: string): Observable<number> {
+    return this.httpClient.get<number>(`http://localhost:1337/api/users/${userName}/${userPass}`);
+  }
+
+  /**
    * Get User Details from the backend server.
    */
-  getUserDetails(): Observable<Array<Auth>> {
-    return this.httpClient.get<Array<Auth>>(`http://localhost:1337/api/users/2`);
+  getUserDetails(userId: number): Observable<Array<Auth>> {
+    return this.httpClient.get<Array<Auth>>(`http://localhost:1337/api/users/${userId}`);
   }
 }

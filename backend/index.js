@@ -32,6 +32,12 @@ router.get('/users/:id', function (req, res) {
   methods.getUser(req, res);
 });
 
+// GET User ID with userName and UserPass
+router.get('/users/:userName/:userPass', function (req, res) {
+  logger.log("Retrieving User: " + req.params.userName);
+  methods.getUserId(req, res);
+});
+
 // POST
 router.post('/users', function (req, res) {
   logger.log("Creating a new Employee");
