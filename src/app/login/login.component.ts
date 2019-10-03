@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter, OnChanges, ViewChild, ElementRef, TemplateRef } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, ViewChild, ElementRef, TemplateRef } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 import { AuthenticationService } from '../services/authentication.service';
@@ -7,7 +7,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-declare var jQuery: any;
+// declare var jQuery: any;
 
 @Component({
   selector: 'app-login',
@@ -15,11 +15,9 @@ declare var jQuery: any;
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  @ViewChild('loginModal', { static: true }) loginModal: ElementRef;
+  @ViewChild('loginModalClose', { static: true }) loginModalClose: ElementRef;
   @Output() loginStatus = new EventEmitter();
   user: Auth;
-  username: string;
-  password: string;
   faTwitter = faTwitter;
   faFacebook = faFacebook;
   faLinkedin = faLinkedin;
@@ -48,7 +46,8 @@ export class LoginComponent implements OnInit {
         if (username === this.user.userName) {
           if (password === this.user.userPass) {
             console.log("Access Granted!");
-            jQuery(this.loginModal.nativeElement).modal('hide');
+            this.loginModalClose.nativeElement.click();
+            // jQuery(this.loginModal.nativeElement).modal('hide');
             if (this.user) {
               this.loginStatus.emit(this.user);
             } else {
