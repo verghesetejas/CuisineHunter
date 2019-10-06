@@ -1,0 +1,61 @@
+@media (min-width: 576px){
+  .modal-dialog {
+    max-width: 400px;
+  }
+  .modal-dialog .modal-content {
+    padding: 1rem;
+  }
+}
+
+.modal-header {
+  position: relative;
+}
+
+.modal-header .close {
+  padding: 10px;
+  margin: -9px 0px 0px 0px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-title {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.login-input {
+  width: 100%;
+  border: 1px solid lightgrey;
+  padding: 3px 10px;
+  margin-bottom: 21px;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.btn-round {
+  border-radius: 3rem;
+}
+
+.delimiter {
+  padding: 1rem;  
+}
+
+.social-buttons .btn {
+  margin: 0 0.5rem 1rem;
+  padding: 10px 15px;
+}
+
+.signup-section {
+  padding: 0.3rem 0rem;
+}
+
+a:not([href]):not([tabindex]), a:not([href]):not([tabindex]), .cuisine-link {
+  cursor: pointer;
+  color: dodgerblue;
+  text-decoration: none;
+}
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover, .cuisine-link:hover {
+  color: blue;
+  text-decoration: underline;
+}
