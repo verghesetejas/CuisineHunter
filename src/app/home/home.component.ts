@@ -4,6 +4,8 @@ import { NgForm } from '@angular/forms';
 import { RestaurantService } from '../services/restaurant.service';
 import { ZomatoSearch } from '../models/zomato-search.model';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { AuthenticationService } from '../services/authentication.service';
+import { Auth } from '../models/auth.model';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +14,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 })
 export class HomeComponent implements OnInit {
   @ViewChild('tableHead', { static: false }) tableHeader: ElementRef;
+  user: Auth;
   faSearch = faSearch;
   query: string;
   zomatoData: ZomatoSearch;
@@ -20,13 +23,15 @@ export class HomeComponent implements OnInit {
   sticky: number;
 
   constructor(
-    private restaurantService: RestaurantService
+    private restaurantService: RestaurantService,
+    private authService: AuthenticationService
   ) { }
 
   /**
    * Initializes the home component
    */
   ngOnInit(): void {
+    this.user = this.authService.getCurrentUser();
     this.query = '';
     this.restaurants = [];
     this.showGrid = false;

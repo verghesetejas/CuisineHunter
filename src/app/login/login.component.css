@@ -49,3 +49,13 @@
 .signup-section {
   padding: 0.3rem 0rem;
 }
+
+a:not([href]):not([tabindex]), a:not([href]):not([tabindex]), .cuisine-link {
+  cursor: pointer;
+  color: dodgerblue;
+  text-decoration: none;
+}
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover, .cuisine-link:hover {
+  color: blue;
+  text-decoration: underline;
+}

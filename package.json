@@ -25,6 +25,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "jquery": "^3.4.1",
+    "moment": "^2.24.0",
     "mysql": "^2.17.1",
     "ngx-bootstrap": "^5.1.2",
     "popper": "^1.0.1",

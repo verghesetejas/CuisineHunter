@@ -1,7 +1,8 @@
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
   aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
+    <!-- Log-in Form -->
+    <div class="modal-content" *ngIf="hasMembership">
       <div class="modal-header border-bottom-0">
         <h5 class="modal-title text-center">Log-in</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" #loginModalClose>
@@ -23,19 +24,48 @@
         </form>
         <div class="text-center text-muted delimiter">or use a social network</div>
         <div class="d-flex justify-content-center social-buttons">
-          <button type="button" class="btn btn-secondary btn-round" title="Twitter">
+          <button type="button" class="btn btn-secondary btn-round" title="Twitter" (click)="navigateExternalLink('https://twitter.com/login?lang=en')">
             <fa-icon [icon]="faTwitter"></fa-icon>
           </button>
-          <button type="button" class="btn btn-secondary btn-round" title="Facebook">
+          <button type="button" class="btn btn-secondary btn-round" title="Facebook" (click)="navigateExternalLink('https://www.facebook.com/')">
             <fa-icon [icon]="faFacebook"></fa-icon>
           </button>
-          <button type="button" class="btn btn-secondary btn-round" title="Linkedin">
+          <button type="button" class="btn btn-secondary btn-round" title="Linkedin" (click)="navigateExternalLink('https://in.linkedin.com/')">
             <fa-icon [icon]="faLinkedin"></fa-icon>
           </button>
         </div>
       </div>
       <div class="modal-footer d-flex justify-content-center">
-        <div class="signup-section"><a routerLink="">New User Sign-Up</a></div>
+        <div class="signup-section"><a class="cuisine-link" (click)="toggleMembershipStatus()">New User Sign-Up</a></div>
+      </div>
+    </div>
+    <!-- Sign-up Form -->
+    <div class="modal-content" *ngIf="!hasMembership">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title text-center">Sign-up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" #signupModalClose>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form #signupForm="ngForm" (ngSubmit)="onSubmitSignup(signupForm, $event)" novalidate>
+          <div class="d-flex flex-column text-center">
+            <div class="form-group">
+              <input class="login-input" type="text" name="userName" placeholder="Username" ngModel #userName="ngModel">
+              <input class="login-input" type="text" name="firstName" placeholder="First Name" ngModel #firstName="ngModel">
+              <input class="login-input" type="text" name="lastName" placeholder="Last Name" ngModel #lastName="ngModel">
+              <input class="login-input" type="password" name="userPass" placeholder="Password" ngModel #userPass="ngModel">
+              <input class="login-input" type="email" name="userEmail" placeholder="Email" ngModel #userEmail="ngModel">
+            </div>
+            <div>
+              <button type="submit" class="btn btn-info btn-block btn-round">Sign Up</button>
+              <button type="button" class="btn btn-danger btn-block btn-round" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="signup-section"><a class="cuisine-link" (click)="toggleMembershipStatus()">Back to Log-in</a></div>
       </div>
     </div>
   </div>

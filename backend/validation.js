@@ -29,7 +29,7 @@ validate.validateUsers = (req, res) => {
         }
         res.send(users);
     });
-}
+};
 
 validate.validateUser = (req, res) => {
     let user;
@@ -44,7 +44,7 @@ validate.validateUser = (req, res) => {
         }
         res.send(user);
     });
-}
+};
 
 validate.validateUserId = (req, res) => {
     let user;
@@ -62,21 +62,29 @@ validate.validateUserId = (req, res) => {
         }
         res.send(user);
     });
-}
+};
+
+validate.validateUserCount = (req, res) => {
+    let count;
+    con.query(`SELECT count(*) as userCount FROM users`, (err, result) => {
+        if (err) throw err;
+        console.log(result);
+        count = result;
+        if (!count) {
+            logger.log('Error 404: Could Not Retrieve data from backend');
+            res.status(404).send('Error 404: Could Not Retrieve data from backend');
+            return;
+        }
+        res.send(count);
+    });
+};
 
 validate.validatePostUser = (req, res) => {
     let user = req.body;
-    let data = {
-        userId: user.userId,
-        userName: user.userName,
-        firstName: user.firstName,
-        lastName: user.lastName,
-        userPass: user.userPass,
-        userEmail: user.userEmail,
-        userDP: user.userDP,
-        joinDate: user.joinDate
-    };
-    let sql = `INSERT INTO users SET ${data}`;
+    let sql = `INSERT INTO users
+        VALUES (${user.userId}, \"${user.userName}\", \"${user.firstName}\",
+        \"${user.lastName}\", \"${user.userPass}\", \"${user.userEmail}\",
+        \"${user.userDP}\", \"${user.joinDate}\")`;
     con.query(sql, (err, result) => {
         if (err) throw err;
         console.log(result);
@@ -85,14 +93,9 @@ validate.validatePostUser = (req, res) => {
             res.status(404).send('Error 404: Not Found');
             return;
         }
-        // rows.forEach(element => {
-        //     if (element.constructor == Array) {
-        //         res.send("Inserted User ID: " + element[0].userId);
-        //     }
-        // });
         res.send(result);
     });
-}
+};
 
 validate.validatePutUser = (req, res) => {
     let user = req.body;
@@ -107,7 +110,7 @@ validate.validatePutUser = (req, res) => {
         }
         res.send("Updated User Data Successfully");
     });
-}
+};
 
 validate.validateDeleteUser = (req, res) => {
     let user;
@@ -122,6 +125,6 @@ validate.validateDeleteUser = (req, res) => {
         }
         res.send(user);
     });
-}
+};
 
 exports.data = validate;

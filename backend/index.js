@@ -32,6 +32,12 @@ router.get('/users/:id', function (req, res) {
   methods.getUser(req, res);
 });
 
+// GET User count
+router.get('/countusers', function (req, res) {
+  logger.log('Retrieving User Count.');
+  methods.getUserCount(req, res);
+});
+
 // GET User ID with userName and UserPass
 router.get('/users/:userName/:userPass', function (req, res) {
   logger.log("Retrieving User: " + req.params.userName);
@@ -39,13 +45,13 @@ router.get('/users/:userName/:userPass', function (req, res) {
 });
 
 // POST
-router.post('/users', function (req, res) {
+router.post('/postuser', function (req, res) {
   logger.log("Creating a new Employee");
   methods.postUser(req, res);
 });
 
 // PUT
-router.put('/users/:id', function (req, res) {
+router.put('/putuser/:id', function (req, res) {
   logger.log("Updating User ID: " + req.params.id);
   methods.putUser(req, res);
 });

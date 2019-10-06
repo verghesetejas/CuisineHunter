@@ -1,24 +1,9 @@
-2019-10-03T16:08:04.943Z : Listening to port: 1337...
-2019-10-03T16:08:04.957Z : Connected!
-2019-10-03T17:17:02.746Z : Retrieving User: verghesetejas
-2019-10-03T17:17:02.762Z : Retrieving User ID: 2
-2019-10-03T17:17:10.614Z : Retrieving User: verghesetejas
-2019-10-03T17:17:10.619Z : Retrieving User ID: 2
-2019-10-03T17:17:31.955Z : Retrieving User: verghesetejas
-2019-10-03T17:17:31.960Z : Retrieving User ID: 2
-2019-10-03T17:20:38.482Z : Retrieving User: verghesetejas
-2019-10-03T17:20:38.488Z : Retrieving User ID: 2
-2019-10-03T17:23:42.445Z : Retrieving User: verghesetejas
-2019-10-03T17:23:42.452Z : Retrieving User ID: 2
-2019-10-03T19:12:41.404Z : Retrieving User: verghesetejas
-2019-10-03T19:12:41.411Z : Retrieving User ID: 2
-2019-10-03T19:15:46.317Z : Retrieving User: verghesetejas
-2019-10-03T19:15:46.323Z : Retrieving User ID: 2
-2019-10-03T19:17:26.454Z : Retrieving User: verghesetejas
-2019-10-03T19:17:26.463Z : Retrieving User ID: 2
-2019-10-03T19:18:29.329Z : Retrieving User: verghesetejas
-2019-10-03T19:18:29.340Z : Retrieving User ID: 2
-2019-10-03T20:08:02.213Z : Retrieving User: verghesetejas
-2019-10-03T20:08:02.222Z : Retrieving User ID: 2
-2019-10-03T20:11:54.281Z : Retrieving User: verghesetejas
-2019-10-03T20:11:54.289Z : Retrieving User ID: 2
+2019-10-06T20:47:41.930Z : Listening to port: 1337...
+2019-10-06T20:47:41.951Z : Connected!
+2019-10-06T20:47:56.297Z : Retrieving User Count.
+2019-10-06T20:51:41.953Z : Retrieving User Count.
+2019-10-06T20:51:41.978Z : Creating a new Employee
+2019-10-06T20:54:29.126Z : Retrieving User Count.
+2019-10-06T20:54:29.140Z : Creating a new Employee
+2019-10-06T20:55:19.185Z : Retrieving User: verghesetejas
+2019-10-06T20:55:19.191Z : Retrieving User ID: 2

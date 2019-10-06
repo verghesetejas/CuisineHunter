@@ -16,6 +16,10 @@ methods.getUserId = (req, res) => {
     validator.data.validateUserId(req, res);
 };
 
+methods.getUserCount = (req, res) => {
+    validator.data.validateUserCount(req, res);
+};
+
 methods.postUser = function (req, res) {
     validator.data.validatePostUser(req, res);
 }

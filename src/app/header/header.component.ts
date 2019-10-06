@@ -1,5 +1,7 @@
-import { Component, OnInit, ViewChild, ElementRef, OnDestroy, HostListener, Renderer2, AfterViewInit, Input, OnChanges } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, OnDestroy, HostListener, Renderer2, AfterViewInit, Input, OnChanges, Output, EventEmitter } from '@angular/core';
 import { Auth } from '../models/auth.model';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +15,11 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnChanges, OnDest
   title = "Cuisine Hunter";
   sticky: number;
 
-  constructor(private renderer: Renderer2) { }
+  constructor(
+    private authService: AuthenticationService,
+    private renderer: Renderer2,
+    private domSanitizer: DomSanitizer
+    ) { }
 
   ngOnInit(): void {
     window.addEventListener('scroll', this.scroll, true);
@@ -43,8 +49,24 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnChanges, OnDest
    * Sets user value
    * @param user - User value
    */
-  loginStatus(user: any): void {
+  loginStatus(user: Auth): void {
     this.user = user;
+    this.authService.setCurrentUser(user);
+  }
+
+  /**
+   * Handles the logout button click event
+   */
+  logoutHandler(): void {
+    this.user = null;
+    this.authService.setCurrentUser(null);
+  }
+
+  /**
+   * Returns safe user profile picture url.
+   */
+  userDPSanitizer(): SafeUrl {
+    return this.domSanitizer.bypassSecurityTrustUrl(this.user.userDP);
   }
 
   ngOnDestroy(): void {
