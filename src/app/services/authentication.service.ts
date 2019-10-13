@@ -60,7 +60,14 @@ export class AuthenticationService {
   }
 
   /**
-   * Updates an existing record in the database
+   * Update an existing user's details
+   * @param user - user object
    */
-  // updateUser(user: any): void {}
+  UpdateUser(user: any): Observable<Auth> {
+    return this.httpClient.put<Auth>(`http://localhost:1337/api/putuser/${user.userId}`, user, {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+      }),
+    });
+  }
 }

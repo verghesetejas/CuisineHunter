@@ -3,6 +3,14 @@
   font-weight: 600;
 }
 
+.app-logo {
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
 .navbar-cuisine {
   position: relative;
   background-color: #bb0f0f !important;
@@ -18,6 +26,7 @@
 .btn-cuisine {
   color: white !important;
   border: none;
+  font-weight: 600;
 }
 .btn-cuisine:hover {
   color: black !important;
@@ -25,4 +34,12 @@
 
 .hide {
   display: none;
+}
+
+.profile-pic {
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
 }

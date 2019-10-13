@@ -1,11 +1,15 @@
 <div class="app-home content">
+  <!-- Searchbar Begins Here -->
   <form class="app-form" #zomatoForm="ngForm" (ngSubmit)="onSubmit(zomatoForm, $event)" novalidate>
     <div class="form-group search-bar">
       <input type="text" class="form-control input-flow" id="query" name="query" aria-describedby="queryHelp"
         placeholder="Enter Query" ngModel #query="ngModel">
-      <button type="submit" class="btn btn-warning btn-search"><fa-icon [icon]="faSearch"></fa-icon></button>
+      <button type="submit" class="btn btn-warning btn-search">
+        <fa-icon [icon]="faSearch"></fa-icon>
+      </button>
     </div>
   </form>
+  <!-- Table Begins Here -->
   <div class="table-content" *ngIf="showGrid">
     <table class="table table-striped table-hover">
       <thead class="thead-dark">
@@ -26,8 +30,10 @@
           <td>{{ restaurant.rating }}</td>
           <td>{{ restaurant.address }}</td>
           <td>{{ restaurant.cuisines }}</td>
-          <td><button type="button" class="btn btn-outline-primary" (click)="navigateExternalLink(restaurant.menu)">Menu Link</button></td>
-          <td><button type="button" class="btn btn-outline-danger" (click)="navigateExternalLink(restaurant.link)">Restaurant Link</button></td>
+          <td><button type="button" class="btn btn-outline-primary" (click)="navigateExternalLink(restaurant.menu)">Menu
+              Link</button></td>
+          <td><button type="button" class="btn btn-outline-danger"
+              (click)="navigateExternalLink(restaurant.link)">Restaurant Link</button></td>
         </tr>
       </tbody>
     </table>
