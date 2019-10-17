@@ -79,12 +79,43 @@ validate.validateUserCount = (req, res) => {
     });
 };
 
+validate.validateLoggedUser = (req, res) => {
+    let user;
+    con.query(`SELECT userId FROM logged_in`, (err, result) => {
+        if (err) throw err;
+        console.log(result);
+        user = result;
+        if (!user) {
+            logger.log('Error 404: Could Not Retrieve data from backend');
+            res.status(404).send('Error 404: Could Not Retrieve data from backend');
+            return;
+        }
+        res.send(user);
+    });
+}
+
 validate.validatePostUser = (req, res) => {
     let user = req.body;
     let sql = `INSERT INTO users
         VALUES (${user.userId}, \"${user.userName}\", \"${user.firstName}\",
         \"${user.lastName}\", \"${user.userPass}\", \"${user.userEmail}\",
         \"${user.userDP}\", \"${user.joinDate}\")`;
+    con.query(sql, (err, result) => {
+        if (err) throw err;
+        console.log(result);
+        if (!result) {
+            logger.log('Error 404: Not Found');
+            res.status(404).send('Error 404: Not Found');
+            return;
+        }
+        res.send(result);
+    });
+};
+
+validate.validatePostLoggedUser = (req, res) => {
+    let user = req.body;
+    let sql = `INSERT INTO logged_in
+        VALUES (0, ${user.userId})`;
     con.query(sql, (err, result) => {
         if (err) throw err;
         console.log(result);
@@ -115,6 +146,21 @@ validate.validatePutUser = (req, res) => {
 validate.validateDeleteUser = (req, res) => {
     let user;
     con.query(`DELETE FROM users WHERE userId = ${req.params.id}`, (err, result) => {
+        if (err) throw err;
+        console.log(result);
+        user = result ? "User Record Deleted" : err.message;
+        if (!user) {
+            logger.log('Error 404: Invalid ID value');
+            res.status(404).send('Error 404: Invalid ID value');
+            return;
+        }
+        res.send(user);
+    });
+};
+
+validate.validateDeleteLoggedUser = (req, res) => {
+    let user;
+    con.query(`DELETE FROM logged_in`, (err, result) => {
         if (err) throw err;
         console.log(result);
         user = result ? "User Record Deleted" : err.message;

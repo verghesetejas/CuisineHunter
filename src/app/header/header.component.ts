@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, OnDestroy, HostListener, Renderer2, AfterViewInit, Input, OnChanges, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, OnDestroy, HostListener, Renderer2, AfterViewInit } from '@angular/core';
 import { Auth } from '../models/auth.model';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { AuthenticationService } from '../services/authentication.service';
@@ -8,7 +8,7 @@ import { AuthenticationService } from '../services/authentication.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit, AfterViewInit, OnChanges, OnDestroy {
+export class HeaderComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('headerComp', { static: false }) header: ElementRef;
   @ViewChild('userDP', { static: false }) userDP: ElementRef;
   user: Auth;
@@ -19,17 +19,22 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnChanges, OnDest
     private authService: AuthenticationService,
     private renderer: Renderer2,
     private domSanitizer: DomSanitizer
-    ) { }
+  ) { }
 
   ngOnInit(): void {
     window.addEventListener('scroll', this.scroll, true);
+    this.authService.getLoggedUserId().subscribe((userLog: Array<any>) => {
+      if (userLog.length !== 0) {
+        this.authService.getUserDetails(userLog[0].userId).subscribe((user: any) => {
+          this.user = user[0];
+        });
+      }
+    });
   }
 
   ngAfterViewInit(): void {
     this.sticky = this.header.nativeElement.getBoundingClientRect().top;
   }
-
-  ngOnChanges(): void {}
 
   /**
    * Handles window scroll animations
@@ -52,6 +57,13 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnChanges, OnDest
   loginStatus(user: Auth): void {
     this.user = user;
     this.authService.setCurrentUser(user);
+    this.authService.getLoggedUserId().subscribe((userLog: Array<any>) => {
+      if (userLog.length !== 0) {
+        this.authService.getUserDetails(userLog[0].userId).subscribe((user: any) => {
+          this.user = user[0];
+        });
+      }
+    });
   }
 
   /**
@@ -60,6 +72,14 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnChanges, OnDest
   logoutHandler(): void {
     this.user = null;
     this.authService.setCurrentUser(null);
+    this.authService.logoutUser().subscribe((data: any) => {
+      if (data) {
+        console.log("User has been successfully logged-out!");
+        return;
+      }
+      console.log("User Log-out failed!");
+      return;
+    });
   }
 
   /**

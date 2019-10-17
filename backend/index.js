@@ -10,6 +10,7 @@ const methods = require('./methods.js').data;
 app.use(express.json());
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
@@ -38,6 +39,12 @@ router.get('/countusers', function (req, res) {
   methods.getUserCount(req, res);
 });
 
+// GET Logged-in User
+router.get('/loggedusers', function (req, res) {
+  logger.log('Retrieving Logged-in User');
+  methods.getLoggedUser(req, res);
+});
+
 // GET User ID with userName and UserPass
 router.get('/users/:userName/:userPass', function (req, res) {
   logger.log("Retrieving User: " + req.params.userName);
@@ -50,6 +57,12 @@ router.post('/postuser', function (req, res) {
   methods.postUser(req, res);
 });
 
+// POST Logged-in table
+router.post('/postloggeduser', function (req, res) {
+  logger.log("Loading Current User");
+  methods.postLoggedUser(req, res);
+});
+
 // PUT
 router.put('/putuser/:id', function (req, res) {
   logger.log("Updating User ID: " + req.params.id);
@@ -60,6 +73,12 @@ router.put('/putuser/:id', function (req, res) {
 router.delete('/users/:id', function (req, res) {
   logger.log("Removing User ID: " + req.params.id);
   methods.removeUser(req, res);
+});
+
+// DELETE all from logged-in table
+router.delete('/loggedusers', function (req, res) {
+  logger.log("Removing All Logged Users");
+  methods.removeLoggedUser(req, res);
 });
 
 app.listen(port, function () {

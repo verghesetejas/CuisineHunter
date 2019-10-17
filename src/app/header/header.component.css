@@ -11,6 +11,10 @@
   margin-right: 5px;
 }
 
+.navbar-brand {
+  font-size: 28px;
+}
+
 .navbar-cuisine {
   position: relative;
   background-color: #bb0f0f !important;

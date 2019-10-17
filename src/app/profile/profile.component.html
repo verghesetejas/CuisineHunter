@@ -1,1 +1,40 @@
-<p>profile works!</p>
+<div class="app-profile">
+  <!-- Component Header -->
+  <div class="app-sub-header">
+    <p class="header">Profile</p>
+  </div>
+  <!-- User Profile Content -->
+  <div class="container jumbotron">
+    <div class="image-container" *ngIf="user">
+      <img [src]="userDPSanitizer()" class="profile-pic" alt="Profile Pic">
+    </div>
+    <div class="table-content" *ngIf="user">
+      <table class="table table-striped table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">UserName, (#ID)</th>
+            <th scope="col">{{ user.userName }}, ( #{{ user.userId }} )</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Name</th>
+            <td>{{ user.firstName }} {{ user.lastName }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Email</th>
+            <td>{{ user.userEmail }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Join Date</th>
+            <td>{{ user.joinDate | date: 'dd.MM.yyyy' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Error 404: No User Found! -->
+    <div class="error-container" *ngIf="!user">
+      <h3 class="center-set">Error 404: No User Found!</h3>
+    </div>
+  </div>
+</div>

@@ -48,6 +48,13 @@ export class AuthenticationService {
   }
 
   /**
+   * Returns the Logged User ID
+   */
+  getLoggedUserId(): Observable<Array<any>> {
+    return this.httpClient.get<Array<any>>('http://localhost:1337/api/loggedusers');
+  }
+
+  /**
    * New User Sign-up method
    * @param user - user object
    */
@@ -60,14 +67,33 @@ export class AuthenticationService {
   }
 
   /**
+   * Current Logged-in User
+   * @param userLog - user log object
+   */
+  postLoggedUser(userLog: any): Observable<any> {
+    return this.httpClient.post<any>(`http://localhost:1337/api/postloggeduser`, userLog, {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+      }),
+    });
+  }
+
+  /**
    * Update an existing user's details
    * @param user - user object
    */
-  UpdateUser(user: any): Observable<Auth> {
+  updateUser(user: any): Observable<Auth> {
     return this.httpClient.put<Auth>(`http://localhost:1337/api/putuser/${user.userId}`, user, {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
       }),
     });
+  }
+
+  /**
+   * Logout the current user
+   */
+  logoutUser(): Observable<any> {
+    return this.httpClient.delete(`http://localhost:1337/api/loggedusers`);
   }
 }

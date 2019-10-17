@@ -16,6 +16,12 @@ CREATE TABLE users (
 	PRIMARY KEY (userId)
 );
 
+CREATE TABLE logged_in (
+	logId INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    userId INT REFERENCES users(userId),
+    PRIMARY KEY (logId)
+);
+
 CREATE TABLE user_history (
 	uhId INT UNSIGNED NOT NULL AUTO_INCREMENT,
     searchQuery VARCHAR(100),

@@ -79,9 +79,19 @@ export class LoginComponent implements OnInit {
         if (username === this.user.userName) {
           if (password === this.user.userPass) {
             console.log("Access Granted!");
-            this.loginModalClose.nativeElement.click();
-            this.loginStatus.emit(this.user);
-            return;
+            const logUser = {
+              userId: this.user.userId,
+            };
+            this.authService.postLoggedUser(logUser).subscribe((data: any) => {
+              if (data) {
+                console.log("User has been logged-in! - " + data);
+                this.loginModalClose.nativeElement.click();
+                this.loginStatus.emit(this.user);
+                return;
+              }
+              console.log("Error: Something went wrong");
+              return;
+            });
           }
         }
         console.log("Access Denied!");
