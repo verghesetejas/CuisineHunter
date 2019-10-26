@@ -1,6 +1,9 @@
 <div class="header" #headerComp>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-cuisine">
-    <a class="navbar-brand" routerLink="home">{{ title }}</a>
+    <a class="navbar-brand" routerLink="home">
+      <img src="../../assets/images/CuisineHunter_logo.png" class="app-logo" alt="CuisineHunter">
+      {{ title }}
+    </a>
     <div class="div-right" *ngIf="!user">
       <a class="btn btn-outline-warning btn-cuisine" data-toggle="modal" data-target="#loginModal"
         #loginBtn>Login/Sign-up</a>
@@ -8,11 +11,12 @@
     <div class="dropdown div-right" *ngIf="user">
       <button class="btn btn-outline-warning btn-cuisine dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
-        <!-- <img [src]="userDPSanitizer()" alt="Profile Pic"> -->
+        <img [src]="userDPSanitizer()" class="profile-pic" alt="Profile Pic">
         {{ user.firstName }} {{ user.lastName }}
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item">Profile</a>
+        <a class="dropdown-item" routerLink="/profile">Profile</a>
+        <a class="dropdown-item" routerLink="/history">History</a>
         <a class="dropdown-item" (click)="logoutHandler()">Logout</a>
       </div>
     </div>

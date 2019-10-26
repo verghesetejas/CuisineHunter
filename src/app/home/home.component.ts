@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Renderer2, Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 import { RestaurantService } from '../services/restaurant.service';
@@ -31,7 +31,13 @@ export class HomeComponent implements OnInit {
    * Initializes the home component
    */
   ngOnInit(): void {
-    this.user = this.authService.getCurrentUser();
+    this.authService.getLoggedUserId().subscribe((userLog: any) => {
+      if (userLog.length !== 0) {
+        this.authService.getUserDetails(userLog[0].userId).subscribe((user: any) => {
+          this.user = user[0];
+        });
+      }
+    });
     this.query = '';
     this.restaurants = [];
     this.showGrid = false;
@@ -43,6 +49,16 @@ export class HomeComponent implements OnInit {
    */
   navigateExternalLink(url: string): void {
     window.open(url);
+    if (this.user) {
+      let data = {
+        searchQuery: this.query,
+        linksClicked: url,
+        userId: this.user.userId,
+      };
+      this.authService.postUserHistory(data).subscribe((res: any) => {
+        console.log(res);
+      });
+    }
   }
 
   /**
@@ -56,9 +72,9 @@ export class HomeComponent implements OnInit {
     this.restaurantService.getQuery(this.query).subscribe(response => {
       this.zomatoData = response;
       this.restaurants = [];
-      for (let i=0; i<response.restaurants.length; i++) {
+      for (let i = 0; i < response.restaurants.length; i++) {
         const element = {
-          id: i+1,
+          id: i + 1,
           name: this.zomatoData.restaurants[i].restaurant.name,
           rating: this.zomatoData.restaurants[i].restaurant.user_rating.aggregate_rating,
           address: this.zomatoData.restaurants[i].restaurant.location.address,
