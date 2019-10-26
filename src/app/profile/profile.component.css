@@ -1,0 +1,46 @@
+.app-sub-header {
+  background: red;
+  padding: 15px 70px;
+}
+
+.header {
+  font-weight: 600;
+  font-size: 28px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.jumbotron {
+  padding: 2rem;
+  margin-top: 20px;
+}
+
+.error-container {
+  height: 400px;
+  position: relative;
+}
+
+.center-set {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container {
+  height: 200px;
+  position: relative;
+  margin: 30px 0px;
+}
+
+.profile-pic {
+  background-color: white;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-right: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

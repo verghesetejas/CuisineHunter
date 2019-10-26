@@ -1,0 +1,12 @@
+.history-container {
+  width: 100%;
+}
+
+.table-content {
+  margin-top: 10px;
+}
+
+.table .thead-dark th {
+  background-color: #343a40;
+  border-color: #343a40;
+}

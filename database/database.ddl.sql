@@ -15,3 +15,17 @@ CREATE TABLE users (
     joinDate DATE NOT NULL, -- date format 'yyyy-MM-dd'
 	PRIMARY KEY (userId)
 );
+
+CREATE TABLE logged_in (
+	logId INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    userId INT REFERENCES users(userId),
+    PRIMARY KEY (logId)
+);
+
+CREATE TABLE user_history (
+	uhId INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    searchQuery VARCHAR(100),
+    linksClicked VARCHAR(10000),
+    userId INT REFERENCES users(userId),
+    PRIMARY KEY (uhId)
+);

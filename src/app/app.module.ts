@@ -14,6 +14,8 @@ import { LoginComponent } from './login/login.component';
 
 import { AuthenticationService } from './services/authentication.service';
 import { RestaurantService } from './services/restaurant.service';
+import { ProfileComponent } from './profile/profile.component';
+import { HistoryComponent } from './history/history.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { RestaurantService } from './services/restaurant.service';
     ErrorHandlerComponent,
     HeaderComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,
