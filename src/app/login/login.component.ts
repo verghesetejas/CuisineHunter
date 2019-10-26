@@ -92,6 +92,7 @@ export class LoginComponent implements OnInit {
               console.log("Error: Something went wrong");
               return;
             });
+            return;
           }
         }
         console.log("Access Denied!");

@@ -24,12 +24,20 @@ methods.getLoggedUser = (req, res) => {
     validator.data.validateLoggedUser(req, res);
 };
 
+methods.getUserHistory = (req, res) => {
+    validator.data.validateUserHistory(req, res);
+};
+
 methods.postUser = function (req, res) {
     validator.data.validatePostUser(req, res);
 };
 
-methods.postLoggedUser= function (req, res) {
+methods.postLoggedUser = function (req, res) {
     validator.data.validatePostLoggedUser(req, res);
+};
+
+methods.postUserHistory = function (req, res) {
+    validator.data.validatePostUserHistory(req, res);
 };
 
 methods.putUser = function (req, res) {

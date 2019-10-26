@@ -92,7 +92,22 @@ validate.validateLoggedUser = (req, res) => {
         }
         res.send(user);
     });
-}
+};
+
+validate.validateUserHistory = (req, res) => {
+    let user;
+    con.query(`SELECT * FROM user_history WHERE userId = ${req.params.id}`, (err, result) => {
+        if (err) throw err;
+        console.log(result);
+        user = result;
+        if (!user) {
+            logger.log('Error 404: Could Not Retrieve data from backend');
+            res.status(404).send('Error 404: Could Not Retrieve data from backend');
+            return;
+        }
+        res.send(user);
+    });
+};
 
 validate.validatePostUser = (req, res) => {
     let user = req.body;
@@ -128,6 +143,22 @@ validate.validatePostLoggedUser = (req, res) => {
     });
 };
 
+validate.validatePostUserHistory = (req, res) => {
+    let user = req.body;
+    let sql = `INSERT INTO user_history
+        VALUES (0, \"${user.searchQuery}\", \"${user.linksClicked}\", ${user.userId})`;
+    con.query(sql, (err, result) => {
+        if (err) throw err;
+        console.log(result);
+        if (!result) {
+            logger.log('Error 404: Not Found');
+            res.status(404).send('Error 404: Not Found');
+            return;
+        }
+        res.send(result);
+    });
+};
+
 validate.validatePutUser = (req, res) => {
     let user = req.body;
     let sql = `UPDATE users SET userName = \"${user.userName}\", firstName = \"${user.firstName}\", lastName = \"${user.lastName}\", userPass = \"${user.userPass}\", userEmail = \"${user.userEmail}\", userDP = \"${user.userDP}\", joinDate = \"${user.joinDate}\" WHERE userId = ${req.params.id}`;
@@ -148,7 +179,7 @@ validate.validateDeleteUser = (req, res) => {
     con.query(`DELETE FROM users WHERE userId = ${req.params.id}`, (err, result) => {
         if (err) throw err;
         console.log(result);
-        user = result ? "User Record Deleted" : err.message;
+        user = result ? { response: "User Record Deleted" } : err.message;
         if (!user) {
             logger.log('Error 404: Invalid ID value');
             res.status(404).send('Error 404: Invalid ID value');
@@ -163,7 +194,7 @@ validate.validateDeleteLoggedUser = (req, res) => {
     con.query(`DELETE FROM logged_in`, (err, result) => {
         if (err) throw err;
         console.log(result);
-        user = result ? "User Record Deleted" : err.message;
+        user = result ? { response: "User Record Deleted" } : err.message;
         if (!user) {
             logger.log('Error 404: Invalid ID value');
             res.status(404).send('Error 404: Invalid ID value');

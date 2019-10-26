@@ -55,6 +55,14 @@ export class AuthenticationService {
   }
 
   /**
+   * Returns array for user history
+   * @param id - User ID
+   */
+  getUserHistory(id: number): Observable<Array<any>> {
+    return this.httpClient.get<Array<any>>(`http://localhost:1337/api/userhistory/${id}`);
+  }
+
+  /**
    * New User Sign-up method
    * @param user - user object
    */
@@ -79,6 +87,18 @@ export class AuthenticationService {
   }
 
   /**
+   * Post User history into database
+   * @param userLog - user history object
+   */
+  postUserHistory(data: any): Observable<any> {
+    return this.httpClient.post<any>(`http://localhost:1337/api/posthistory`, data, {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+      }),
+    });
+  }
+
+  /**
    * Update an existing user's details
    * @param user - user object
    */
@@ -94,6 +114,6 @@ export class AuthenticationService {
    * Logout the current user
    */
   logoutUser(): Observable<any> {
-    return this.httpClient.delete(`http://localhost:1337/api/loggedusers`);
+    return this.httpClient.delete(`http://localhost:1337/api/deleteloggedusers`);
   }
 }

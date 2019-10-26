@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Renderer2, Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 import { RestaurantService } from '../services/restaurant.service';
@@ -49,6 +49,16 @@ export class HomeComponent implements OnInit {
    */
   navigateExternalLink(url: string): void {
     window.open(url);
+    if (this.user) {
+      let data = {
+        searchQuery: this.query,
+        linksClicked: url,
+        userId: this.user.userId,
+      };
+      this.authService.postUserHistory(data).subscribe((res: any) => {
+        console.log(res);
+      });
+    }
   }
 
   /**

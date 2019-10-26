@@ -51,6 +51,12 @@ router.get('/users/:userName/:userPass', function (req, res) {
   methods.getUserId(req, res);
 });
 
+// GET User Search History from User ID
+router.get('/userhistory/:id', function (req, res) {
+  logger.log("Retrieving User History for ID: " + req.params.id);
+  methods.getUserHistory(req, res);
+});
+
 // POST
 router.post('/postuser', function (req, res) {
   logger.log("Creating a new Employee");
@@ -61,6 +67,12 @@ router.post('/postuser', function (req, res) {
 router.post('/postloggeduser', function (req, res) {
   logger.log("Loading Current User");
   methods.postLoggedUser(req, res);
+});
+
+// POST User History
+router.post('/posthistory', function (req, res) {
+  logger.log("Posting to User History");
+  methods.postUserHistory(req, res);
 });
 
 // PUT
@@ -76,7 +88,7 @@ router.delete('/users/:id', function (req, res) {
 });
 
 // DELETE all from logged-in table
-router.delete('/loggedusers', function (req, res) {
+router.delete('/deleteloggedusers', function (req, res) {
   logger.log("Removing All Logged Users");
   methods.removeLoggedUser(req, res);
 });

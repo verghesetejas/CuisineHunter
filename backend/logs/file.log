@@ -1,109 +1,55 @@
-2019-10-17T20:48:07.468Z : Listening to port: 1337...
-2019-10-17T20:48:07.493Z : Connected!
-2019-10-17T20:48:30.774Z : Retrieving Logged-in User
-2019-10-17T20:48:30.883Z : Retrieving Logged-in User
-2019-10-17T20:48:30.898Z : Retrieving User ID: 2
-2019-10-17T20:48:30.932Z : Retrieving User ID: 2
-2019-10-17T20:48:34.087Z : Retrieving Logged-in User
-2019-10-17T20:48:34.161Z : Retrieving Logged-in User
-2019-10-17T20:48:34.283Z : Retrieving User ID: 2
-2019-10-17T20:48:34.289Z : Retrieving User ID: 2
-2019-10-17T20:48:36.900Z : Removing All Logged Users
-2019-10-17T20:48:56.193Z : Retrieving Logged-in User
-2019-10-17T20:48:56.254Z : Retrieving Logged-in User
-2019-10-17T20:49:08.712Z : Retrieving User: verghesetejas
-2019-10-17T20:49:08.721Z : Retrieving User ID: 2
-2019-10-17T20:49:08.758Z : Loading Current User
-2019-10-17T20:49:17.207Z : Retrieving Logged-in User
-2019-10-17T20:49:17.270Z : Retrieving Logged-in User
-2019-10-17T20:49:17.307Z : Retrieving User ID: 2
-2019-10-17T20:49:17.316Z : Retrieving User ID: 2
-2019-10-17T20:49:21.052Z : Removing All Logged Users
-2019-10-17T20:52:16.425Z : Retrieving Logged-in User
-2019-10-17T20:52:16.486Z : Retrieving Logged-in User
-2019-10-17T20:52:21.566Z : Retrieving Logged-in User
-2019-10-17T20:52:21.629Z : Retrieving Logged-in User
-2019-10-17T20:52:32.028Z : Retrieving User: verghesetejas
-2019-10-17T20:52:32.036Z : Retrieving User ID: 2
-2019-10-17T20:52:32.056Z : Loading Current User
-2019-10-17T20:52:35.659Z : Retrieving Logged-in User
-2019-10-17T20:52:35.722Z : Retrieving Logged-in User
-2019-10-17T20:52:35.765Z : Retrieving User ID: 2
-2019-10-17T20:52:35.772Z : Retrieving User ID: 2
-2019-10-17T20:52:38.493Z : Removing All Logged Users
-2019-10-17T20:53:06.466Z : Retrieving Logged-in User
-2019-10-17T20:53:06.540Z : Retrieving Logged-in User
-2019-10-17T20:55:12.610Z : Retrieving Logged-in User
-2019-10-17T20:56:33.858Z : Retrieving Logged-in User
-2019-10-17T20:56:45.458Z : Retrieving User: verghesetejas
-2019-10-17T20:56:45.465Z : Retrieving User ID: 2
-2019-10-17T20:56:45.477Z : Retrieving Logged-in User
-2019-10-17T20:56:45.487Z : Retrieving Logged-in User
-2019-10-17T20:56:45.499Z : Loading Current User
-2019-10-17T20:56:53.246Z : Retrieving Logged-in User
-2019-10-17T20:56:53.288Z : Retrieving User ID: 2
-2019-10-17T20:56:57.818Z : Retrieving Logged-in User
-2019-10-17T20:56:57.861Z : Retrieving User ID: 2
-2019-10-17T20:57:00.023Z : Retrieving Logged-in User
-2019-10-17T20:57:00.056Z : Retrieving User ID: 2
-2019-10-17T20:59:01.373Z : Retrieving Logged-in User
-2019-10-17T20:59:01.415Z : Retrieving User ID: 2
-2019-10-17T20:59:16.421Z : Retrieving Logged-in User
-2019-10-17T20:59:16.471Z : Retrieving User ID: 2
-2019-10-17T20:59:27.263Z : Retrieving User: verghesetejas
-2019-10-17T20:59:27.270Z : Retrieving User ID: 2
-2019-10-17T20:59:27.294Z : Loading Current User
-2019-10-17T20:59:27.304Z : Retrieving Logged-in User
-2019-10-17T20:59:27.321Z : Retrieving Logged-in User
-2019-10-17T20:59:27.332Z : Retrieving User ID: 2
-2019-10-17T20:59:27.349Z : Retrieving User ID: 2
-2019-10-17T20:59:30.893Z : Retrieving Logged-in User
-2019-10-17T20:59:30.909Z : Retrieving User ID: 2
-2019-10-17T20:59:33.715Z : Removing All Logged Users
-2019-10-17T20:59:35.038Z : Retrieving Logged-in User
-2019-10-17T20:59:38.207Z : Retrieving User: verghesetejas
-2019-10-17T20:59:38.214Z : Retrieving User ID: 2
-2019-10-17T20:59:38.230Z : Loading Current User
-2019-10-17T20:59:38.233Z : Retrieving Logged-in User
-2019-10-17T20:59:38.249Z : Retrieving Logged-in User
-2019-10-17T20:59:38.261Z : Retrieving User ID: 2
-2019-10-17T20:59:38.269Z : Retrieving User ID: 2
-2019-10-17T20:59:40.281Z : Retrieving Logged-in User
-2019-10-17T20:59:40.295Z : Retrieving User ID: 2
-2019-10-17T20:59:41.904Z : Removing All Logged Users
-2019-10-17T20:59:44.638Z : Retrieving Logged-in User
-2019-10-17T20:59:56.616Z : Retrieving User: verghesetejas
-2019-10-17T20:59:56.624Z : Retrieving User ID: 2
-2019-10-17T20:59:56.636Z : Retrieving Logged-in User
-2019-10-17T20:59:56.641Z : Loading Current User
-2019-10-17T20:59:56.676Z : Retrieving Logged-in User
-2019-10-17T20:59:56.693Z : Retrieving User ID: 2
-2019-10-17T21:00:00.378Z : Retrieving Logged-in User
-2019-10-17T21:00:00.419Z : Retrieving User ID: 2
-2019-10-17T21:00:03.778Z : Retrieving Logged-in User
-2019-10-17T21:00:03.821Z : Retrieving User ID: 2
-2019-10-17T21:00:58.518Z : Retrieving Logged-in User
-2019-10-17T21:00:58.610Z : Retrieving Logged-in User
-2019-10-17T21:00:58.647Z : Retrieving User ID: 2
-2019-10-17T21:00:58.679Z : Retrieving User ID: 2
-2019-10-17T21:01:03.631Z : Retrieving Logged-in User
-2019-10-17T21:01:03.700Z : Retrieving Logged-in User
-2019-10-17T21:01:03.831Z : Retrieving User ID: 2
-2019-10-17T21:01:03.845Z : Retrieving User ID: 2
-2019-10-17T21:01:05.600Z : Removing All Logged Users
-2019-10-17T21:01:08.510Z : Retrieving Logged-in User
-2019-10-17T21:01:08.576Z : Retrieving Logged-in User
-2019-10-17T21:01:09.839Z : Retrieving Logged-in User
-2019-10-17T21:01:22.360Z : Retrieving User: verghesetejas
-2019-10-17T21:01:22.369Z : Retrieving User ID: 2
-2019-10-17T21:01:22.384Z : Loading Current User
-2019-10-17T21:01:22.393Z : Retrieving Logged-in User
-2019-10-17T21:01:22.411Z : Retrieving Logged-in User
-2019-10-17T21:01:22.425Z : Retrieving User ID: 2
-2019-10-17T21:01:22.457Z : Retrieving User ID: 2
-2019-10-17T21:01:24.517Z : Retrieving Logged-in User
-2019-10-17T21:01:24.528Z : Retrieving User ID: 2
-2019-10-17T21:01:27.168Z : Removing All Logged Users
-2019-10-17T21:01:30.533Z : Retrieving Logged-in User
-2019-10-17T21:01:30.606Z : Retrieving Logged-in User
-2019-10-17T21:01:33.449Z : Retrieving Logged-in User
+2019-10-26T19:10:48.745Z : Listening to port: 1337...
+2019-10-26T19:10:48.767Z : Connected!
+2019-10-26T19:10:56.213Z : Retrieving Logged-in User
+2019-10-26T19:10:58.782Z : Retrieving Logged-in User
+2019-10-26T19:10:58.840Z : Retrieving Logged-in User
+2019-10-26T19:11:09.072Z : Retrieving User: verghesetejas
+2019-10-26T19:11:09.080Z : Retrieving User ID: 2
+2019-10-26T19:11:09.103Z : Loading Current User
+2019-10-26T19:11:09.122Z : Retrieving Logged-in User
+2019-10-26T19:11:09.143Z : Retrieving User ID: 2
+2019-10-26T19:11:21.562Z : Retrieving Logged-in User
+2019-10-26T19:11:21.573Z : Retrieving User ID: 2
+2019-10-26T19:11:21.581Z : Retrieving User History for ID: 2
+2019-10-26T19:11:24.843Z : Removing All Logged Users
+2019-10-26T19:11:24.872Z : Retrieving Logged-in User
+2019-10-26T19:11:35.524Z : Retrieving User: verghesetejas
+2019-10-26T19:11:35.530Z : Retrieving User ID: 2
+2019-10-26T19:11:35.541Z : Loading Current User
+2019-10-26T19:11:35.559Z : Retrieving Logged-in User
+2019-10-26T19:11:35.572Z : Retrieving User ID: 2
+2019-10-26T19:11:40.985Z : Retrieving Logged-in User
+2019-10-26T19:11:40.999Z : Retrieving User ID: 2
+2019-10-26T19:11:43.508Z : Removing All Logged Users
+2019-10-26T19:11:43.534Z : Retrieving Logged-in User
+2019-10-26T19:14:23.681Z : Retrieving User: verghesetejas
+2019-10-26T19:14:23.690Z : Retrieving User ID: 2
+2019-10-26T19:14:23.702Z : Loading Current User
+2019-10-26T19:14:23.721Z : Retrieving Logged-in User
+2019-10-26T19:14:23.735Z : Retrieving User ID: 2
+2019-10-26T19:14:27.333Z : Retrieving Logged-in User
+2019-10-26T19:14:27.389Z : Retrieving Logged-in User
+2019-10-26T19:14:27.433Z : Retrieving User ID: 2
+2019-10-26T19:14:27.443Z : Retrieving User ID: 2
+2019-10-26T19:14:53.333Z : Removing All Logged Users
+2019-10-26T19:14:58.566Z : Retrieving Logged-in User
+2019-10-26T19:14:58.629Z : Retrieving Logged-in User
+2019-10-26T19:15:23.637Z : Retrieving User: verghesetejas
+2019-10-26T19:15:23.644Z : Retrieving User ID: 2
+2019-10-26T19:15:23.655Z : Loading Current User
+2019-10-26T19:15:23.675Z : Retrieving Logged-in User
+2019-10-26T19:15:23.692Z : Retrieving User ID: 2
+2019-10-26T19:15:41.512Z : Retrieving Logged-in User
+2019-10-26T19:15:41.568Z : Retrieving Logged-in User
+2019-10-26T19:15:41.617Z : Retrieving User ID: 2
+2019-10-26T19:15:41.623Z : Retrieving User ID: 2
+2019-10-26T19:16:48.225Z : Posting to User History
+2019-10-26T19:17:34.715Z : Posting to User History
+2019-10-26T19:17:39.841Z : Posting to User History
+2019-10-26T19:17:47.712Z : Retrieving Logged-in User
+2019-10-26T19:17:47.722Z : Retrieving User ID: 2
+2019-10-26T19:18:04.645Z : Retrieving Logged-in User
+2019-10-26T19:18:04.658Z : Retrieving User ID: 2
+2019-10-26T19:18:04.665Z : Retrieving User History for ID: 2
+2019-10-26T19:18:29.603Z : Removing All Logged Users
+2019-10-26T19:18:29.629Z : Retrieving Logged-in User

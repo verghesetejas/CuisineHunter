@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { AuthenticationService } from '../services/authentication.service';
 import { Auth } from '../models/auth.model';
 import { SafeUrl, DomSanitizer } from '@angular/platform-browser';

@@ -8,6 +8,7 @@ INSERT INTO users VALUES (2, "verghesetejas", "Tejas", "Verghese", "admin2", "ve
 -- User table commands
 SELECT * FROM users;
 SELECT * FROM logged_in;
+SELECT * FROM user_history;
 SELECT * FROM users WHERE userId = 1;
 SELECT COUNT(*) AS userCount FROM users;
 

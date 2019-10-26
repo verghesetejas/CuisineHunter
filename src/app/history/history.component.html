@@ -1,1 +1,29 @@
-<p>history works!</p>
+<div class="history-container">
+  <!-- Table Begins Here -->
+  <div class="table-content" *ngIf="showGrid">
+    <table class="table table-striped table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">User ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Search Query</th>
+          <th scope="col">Link Clicked</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of userHistoryList">
+          <th scope="row">{{ item.uhId }}</th>
+          <td>{{ item.userId }}</td>
+          <td>{{ user.firstName }} {{ user.lastName }}</td>
+          <td>{{ item.searchQuery }}</td>
+          <td>{{ item.linksClicked }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- No Data Notice -->
+  <div *ngIf="!showGrid">
+    <h3>No Data Available</h3>
+  </div>
+</div>

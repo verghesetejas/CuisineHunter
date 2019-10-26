@@ -1,7 +1,8 @@
-import { Component, OnInit, ViewChild, ElementRef, OnDestroy, HostListener, Renderer2, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, OnDestroy, HostListener, Renderer2, AfterViewInit, Output, EventEmitter, Input } from '@angular/core';
 import { Auth } from '../models/auth.model';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { AuthenticationService } from '../services/authentication.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -18,7 +19,8 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnDestroy {
   constructor(
     private authService: AuthenticationService,
     private renderer: Renderer2,
-    private domSanitizer: DomSanitizer
+    private domSanitizer: DomSanitizer,
+    public router: Router,
   ) { }
 
   ngOnInit(): void {
@@ -75,6 +77,9 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnDestroy {
     this.authService.logoutUser().subscribe((data: any) => {
       if (data) {
         console.log("User has been successfully logged-out!");
+        this.router.navigate(['./home']).then((redirected: any) => {
+          if (redirected) console.log(redirected);
+        });
         return;
       }
       console.log("User Log-out failed!");
