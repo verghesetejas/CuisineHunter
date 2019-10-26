@@ -51,3 +51,17 @@
   background-color: #343a40;
   border-color: #343a40;
 }
+
+.table-msg {
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.table-msg>h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: grey;
+}

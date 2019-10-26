@@ -1,61 +1,61 @@
-2019-10-26T19:10:48.745Z : Listening to port: 1337...
-2019-10-26T19:10:48.767Z : Connected!
-2019-10-26T19:10:56.213Z : Retrieving Logged-in User
-2019-10-26T19:10:58.782Z : Retrieving Logged-in User
-2019-10-26T19:10:58.840Z : Retrieving Logged-in User
-2019-10-26T19:11:09.072Z : Retrieving User: verghesetejas
-2019-10-26T19:11:09.080Z : Retrieving User ID: 2
-2019-10-26T19:11:09.103Z : Loading Current User
-2019-10-26T19:11:09.122Z : Retrieving Logged-in User
-2019-10-26T19:11:09.143Z : Retrieving User ID: 2
-2019-10-26T19:11:21.562Z : Retrieving Logged-in User
-2019-10-26T19:11:21.573Z : Retrieving User ID: 2
-2019-10-26T19:11:21.581Z : Retrieving User History for ID: 2
-2019-10-26T19:11:24.843Z : Removing All Logged Users
-2019-10-26T19:11:24.872Z : Retrieving Logged-in User
-2019-10-26T19:11:35.524Z : Retrieving User: verghesetejas
-2019-10-26T19:11:35.530Z : Retrieving User ID: 2
-2019-10-26T19:11:35.541Z : Loading Current User
-2019-10-26T19:11:35.559Z : Retrieving Logged-in User
-2019-10-26T19:11:35.572Z : Retrieving User ID: 2
-2019-10-26T19:11:40.985Z : Retrieving Logged-in User
-2019-10-26T19:11:40.999Z : Retrieving User ID: 2
-2019-10-26T19:11:43.508Z : Removing All Logged Users
-2019-10-26T19:11:43.534Z : Retrieving Logged-in User
-2019-10-26T19:14:23.681Z : Retrieving User: verghesetejas
-2019-10-26T19:14:23.690Z : Retrieving User ID: 2
-2019-10-26T19:14:23.702Z : Loading Current User
-2019-10-26T19:14:23.721Z : Retrieving Logged-in User
-2019-10-26T19:14:23.735Z : Retrieving User ID: 2
-2019-10-26T19:14:27.333Z : Retrieving Logged-in User
-2019-10-26T19:14:27.389Z : Retrieving Logged-in User
-2019-10-26T19:14:27.433Z : Retrieving User ID: 2
-2019-10-26T19:14:27.443Z : Retrieving User ID: 2
-2019-10-26T19:14:53.333Z : Removing All Logged Users
-2019-10-26T19:14:58.566Z : Retrieving Logged-in User
-2019-10-26T19:14:58.629Z : Retrieving Logged-in User
-2019-10-26T19:15:23.637Z : Retrieving User: verghesetejas
-2019-10-26T19:15:23.644Z : Retrieving User ID: 2
-2019-10-26T19:15:23.655Z : Loading Current User
-2019-10-26T19:15:23.675Z : Retrieving Logged-in User
-2019-10-26T19:15:23.692Z : Retrieving User ID: 2
-2019-10-26T19:15:41.512Z : Retrieving Logged-in User
-2019-10-26T19:15:41.568Z : Retrieving Logged-in User
-2019-10-26T19:15:41.617Z : Retrieving User ID: 2
-2019-10-26T19:15:41.623Z : Retrieving User ID: 2
-2019-10-26T19:16:48.225Z : Posting to User History
-2019-10-26T19:17:34.715Z : Posting to User History
-2019-10-26T19:17:39.841Z : Posting to User History
-2019-10-26T19:17:47.712Z : Retrieving Logged-in User
-2019-10-26T19:17:47.722Z : Retrieving User ID: 2
-2019-10-26T19:18:04.645Z : Retrieving Logged-in User
-2019-10-26T19:18:04.658Z : Retrieving User ID: 2
-2019-10-26T19:18:04.665Z : Retrieving User History for ID: 2
-2019-10-26T19:18:29.603Z : Removing All Logged Users
-2019-10-26T19:18:29.629Z : Retrieving Logged-in User
-2019-10-26T19:34:38.671Z : Retrieving Logged-in User
-2019-10-26T19:34:38.706Z : Retrieving Logged-in User
-2019-10-26T08:45:42.959Z : Listening to port: 1337...
-2019-10-26T08:45:43.026Z : Connected!
-2019-10-26T09:50:48.675Z : Retrieving User: verghesetejas
-2019-10-26T09:50:48.751Z : Retrieving User ID: 2
+2019-10-26T19:47:41.678Z : Listening to port: 1337...
+2019-10-26T19:47:41.700Z : Connected!
+2019-10-26T19:48:05.804Z : Retrieving Logged-in User
+2019-10-26T19:48:05.849Z : Retrieving Logged-in User
+2019-10-26T19:48:09.504Z : Retrieving Logged-in User
+2019-10-26T19:48:09.535Z : Retrieving Logged-in User
+2019-10-26T19:52:03.422Z : Retrieving Logged-in User
+2019-10-26T19:52:03.569Z : Retrieving Logged-in User
+2019-10-26T19:53:33.016Z : Retrieving Logged-in User
+2019-10-26T19:53:33.122Z : Retrieving Logged-in User
+2019-10-26T19:53:49.720Z : Retrieving User: verghesetejas
+2019-10-26T19:53:49.731Z : Retrieving User ID: 2
+2019-10-26T19:53:49.766Z : Loading Current User
+2019-10-26T19:53:49.783Z : Retrieving Logged-in User
+2019-10-26T19:53:49.794Z : Retrieving User ID: 2
+2019-10-26T19:53:53.010Z : Retrieving Logged-in User
+2019-10-26T19:53:53.081Z : Retrieving Logged-in User
+2019-10-26T19:53:53.133Z : Retrieving User ID: 2
+2019-10-26T19:53:53.143Z : Retrieving User ID: 2
+2019-10-26T19:54:09.327Z : Posting to User History
+2019-10-26T19:54:13.237Z : Posting to User History
+2019-10-26T19:54:15.438Z : Posting to User History
+2019-10-26T19:54:24.560Z : Retrieving Logged-in User
+2019-10-26T19:54:24.574Z : Retrieving User ID: 2
+2019-10-26T19:54:28.980Z : Retrieving Logged-in User
+2019-10-26T19:54:28.994Z : Retrieving User ID: 2
+2019-10-26T19:54:29.001Z : Retrieving User History for ID: 2
+2019-10-26T19:54:35.358Z : Removing All Logged Users
+2019-10-26T19:54:35.383Z : Retrieving Logged-in User
+2019-10-26T19:58:10.048Z : Retrieving Logged-in User
+2019-10-26T19:58:10.100Z : Retrieving Logged-in User
+2019-10-26T19:58:30.839Z : Retrieving Logged-in User
+2019-10-26T19:58:30.905Z : Retrieving Logged-in User
+2019-10-26T19:58:39.307Z : Retrieving Logged-in User
+2019-10-26T19:58:39.359Z : Retrieving Logged-in User
+2019-10-26T19:58:45.767Z : Retrieving Logged-in User
+2019-10-26T19:58:45.809Z : Retrieving Logged-in User
+2019-10-26T19:59:34.510Z : Retrieving Logged-in User
+2019-10-26T19:59:34.549Z : Retrieving Logged-in User
+2019-10-26T19:59:38.377Z : Retrieving Logged-in User
+2019-10-26T19:59:38.419Z : Retrieving Logged-in User
+2019-10-26T19:59:52.548Z : Retrieving Logged-in User
+2019-10-26T19:59:52.613Z : Retrieving Logged-in User
+2019-10-26T20:00:11.168Z : Retrieving Logged-in User
+2019-10-26T20:00:11.212Z : Retrieving Logged-in User
+2019-10-26T20:00:19.315Z : Retrieving Logged-in User
+2019-10-26T20:00:19.356Z : Retrieving Logged-in User
+2019-10-26T20:00:36.474Z : Retrieving Logged-in User
+2019-10-26T20:00:36.518Z : Retrieving Logged-in User
+2019-10-26T20:01:13.522Z : Retrieving User: verghesetejas
+2019-10-26T20:01:13.529Z : Retrieving User ID: 2
+2019-10-26T20:01:13.538Z : Loading Current User
+2019-10-26T20:01:13.550Z : Retrieving Logged-in User
+2019-10-26T20:01:13.559Z : Retrieving User ID: 2
+2019-10-26T20:01:17.282Z : Retrieving Logged-in User
+2019-10-26T20:01:17.289Z : Retrieving User ID: 2
+2019-10-26T20:01:23.854Z : Retrieving Logged-in User
+2019-10-26T20:01:23.862Z : Retrieving User ID: 2
+2019-10-26T20:01:23.869Z : Retrieving User History for ID: 2
+2019-10-26T20:01:49.937Z : Removing All Logged Users
+2019-10-26T20:01:49.962Z : Retrieving Logged-in User
