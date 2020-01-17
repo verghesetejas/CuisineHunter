@@ -16,6 +16,7 @@ import { AuthenticationService } from './services/authentication.service';
 import { RestaurantService } from './services/restaurant.service';
 import { ProfileComponent } from './profile/profile.component';
 import { HistoryComponent } from './history/history.component';
+import { RestaurantsComponent } from './restaurants/restaurants.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HistoryComponent } from './history/history.component';
     FooterComponent,
     LoginComponent,
     ProfileComponent,
-    HistoryComponent
+    HistoryComponent,
+    RestaurantsComponent
   ],
   imports: [
     BrowserModule,

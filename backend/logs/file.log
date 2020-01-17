@@ -1,67 +1,28 @@
-<<<<<<< HEAD
-2019-10-26T14:34:20.651Z : Listening to port: 1337...
-2019-10-26T14:34:20.714Z : Retrieving Logged-in User
-2019-10-26T14:34:20.722Z : Connected!
-=======
-2019-10-26T19:47:41.678Z : Listening to port: 1337...
-2019-10-26T19:47:41.700Z : Connected!
-2019-10-26T19:48:05.804Z : Retrieving Logged-in User
-2019-10-26T19:48:05.849Z : Retrieving Logged-in User
-2019-10-26T19:48:09.504Z : Retrieving Logged-in User
-2019-10-26T19:48:09.535Z : Retrieving Logged-in User
-2019-10-26T19:52:03.422Z : Retrieving Logged-in User
-2019-10-26T19:52:03.569Z : Retrieving Logged-in User
-2019-10-26T19:53:33.016Z : Retrieving Logged-in User
-2019-10-26T19:53:33.122Z : Retrieving Logged-in User
-2019-10-26T19:53:49.720Z : Retrieving User: verghesetejas
-2019-10-26T19:53:49.731Z : Retrieving User ID: 2
-2019-10-26T19:53:49.766Z : Loading Current User
-2019-10-26T19:53:49.783Z : Retrieving Logged-in User
-2019-10-26T19:53:49.794Z : Retrieving User ID: 2
-2019-10-26T19:53:53.010Z : Retrieving Logged-in User
-2019-10-26T19:53:53.081Z : Retrieving Logged-in User
-2019-10-26T19:53:53.133Z : Retrieving User ID: 2
-2019-10-26T19:53:53.143Z : Retrieving User ID: 2
-2019-10-26T19:54:09.327Z : Posting to User History
-2019-10-26T19:54:13.237Z : Posting to User History
-2019-10-26T19:54:15.438Z : Posting to User History
-2019-10-26T19:54:24.560Z : Retrieving Logged-in User
-2019-10-26T19:54:24.574Z : Retrieving User ID: 2
-2019-10-26T19:54:28.980Z : Retrieving Logged-in User
-2019-10-26T19:54:28.994Z : Retrieving User ID: 2
-2019-10-26T19:54:29.001Z : Retrieving User History for ID: 2
-2019-10-26T19:54:35.358Z : Removing All Logged Users
-2019-10-26T19:54:35.383Z : Retrieving Logged-in User
-2019-10-26T19:58:10.048Z : Retrieving Logged-in User
-2019-10-26T19:58:10.100Z : Retrieving Logged-in User
-2019-10-26T19:58:30.839Z : Retrieving Logged-in User
-2019-10-26T19:58:30.905Z : Retrieving Logged-in User
-2019-10-26T19:58:39.307Z : Retrieving Logged-in User
-2019-10-26T19:58:39.359Z : Retrieving Logged-in User
-2019-10-26T19:58:45.767Z : Retrieving Logged-in User
-2019-10-26T19:58:45.809Z : Retrieving Logged-in User
-2019-10-26T19:59:34.510Z : Retrieving Logged-in User
-2019-10-26T19:59:34.549Z : Retrieving Logged-in User
-2019-10-26T19:59:38.377Z : Retrieving Logged-in User
-2019-10-26T19:59:38.419Z : Retrieving Logged-in User
-2019-10-26T19:59:52.548Z : Retrieving Logged-in User
-2019-10-26T19:59:52.613Z : Retrieving Logged-in User
-2019-10-26T20:00:11.168Z : Retrieving Logged-in User
-2019-10-26T20:00:11.212Z : Retrieving Logged-in User
-2019-10-26T20:00:19.315Z : Retrieving Logged-in User
-2019-10-26T20:00:19.356Z : Retrieving Logged-in User
-2019-10-26T20:00:36.474Z : Retrieving Logged-in User
-2019-10-26T20:00:36.518Z : Retrieving Logged-in User
-2019-10-26T20:01:13.522Z : Retrieving User: verghesetejas
-2019-10-26T20:01:13.529Z : Retrieving User ID: 2
-2019-10-26T20:01:13.538Z : Loading Current User
-2019-10-26T20:01:13.550Z : Retrieving Logged-in User
-2019-10-26T20:01:13.559Z : Retrieving User ID: 2
-2019-10-26T20:01:17.282Z : Retrieving Logged-in User
-2019-10-26T20:01:17.289Z : Retrieving User ID: 2
-2019-10-26T20:01:23.854Z : Retrieving Logged-in User
-2019-10-26T20:01:23.862Z : Retrieving User ID: 2
-2019-10-26T20:01:23.869Z : Retrieving User History for ID: 2
-2019-10-26T20:01:49.937Z : Removing All Logged Users
-2019-10-26T20:01:49.962Z : Retrieving Logged-in User
->>>>>>> 42cf68c66aafe307996b3170f68e2821127cb7c6
+2020-01-17T10:57:41.284Z : Listening to port: 1337...
+2020-01-17T10:57:41.388Z : Connected!
+2020-01-17T11:07:31.686Z : Retrieving Logged-in User
+2020-01-17T11:07:31.921Z : Retrieving Logged-in User
+2020-01-17T11:07:32.151Z : Retrieving User ID: 1
+2020-01-17T11:07:32.406Z : Retrieving User ID: 1
+2020-01-17T11:17:21.147Z : Retrieving Logged-in User
+2020-01-17T11:17:21.379Z : Retrieving Logged-in User
+2020-01-17T11:17:21.498Z : Retrieving User ID: 1
+2020-01-17T11:17:21.684Z : Retrieving User ID: 1
+2020-01-17T11:17:26.170Z : Retrieving Logged-in User
+2020-01-17T11:17:26.295Z : Retrieving Logged-in User
+2020-01-17T11:17:26.391Z : Retrieving User ID: 1
+2020-01-17T11:17:26.487Z : Retrieving User ID: 1
+2020-01-17T11:17:55.689Z : Retrieving Logged-in User
+2020-01-17T11:17:55.774Z : Retrieving User ID: 1
+2020-01-17T13:02:44.402Z : Retrieving Logged-in User
+2020-01-17T13:02:44.588Z : Retrieving Logged-in User
+2020-01-17T13:02:44.664Z : Retrieving User ID: 1
+2020-01-17T13:02:44.679Z : Retrieving User ID: 1
+2020-01-17T13:03:46.180Z : Retrieving Logged-in User
+2020-01-17T13:03:46.353Z : Retrieving Logged-in User
+2020-01-17T13:03:46.475Z : Retrieving User ID: 1
+2020-01-17T13:03:46.620Z : Retrieving User ID: 1
+2020-01-17T13:03:57.356Z : Retrieving Logged-in User
+2020-01-17T13:03:57.438Z : Retrieving User ID: 1
+2020-01-17T13:04:14.644Z : Retrieving Logged-in User
+2020-01-17T13:04:14.715Z : Retrieving User ID: 1

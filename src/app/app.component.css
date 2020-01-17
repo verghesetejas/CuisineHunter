@@ -7,6 +7,13 @@
   display: flex;
 }
 
+.main-footer {
+  background-color: black;
+  color: white;
+}
+
+
+
 .navigation-pane {
   display: inline-block;
 }

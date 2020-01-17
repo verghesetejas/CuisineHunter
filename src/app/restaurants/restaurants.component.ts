@@ -3,16 +3,19 @@ import { NgForm } from '@angular/forms';
 
 import { RestaurantService } from '../services/restaurant.service';
 import { ZomatoSearch } from '../models/zomato-search.model';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { AuthenticationService } from '../services/authentication.service';
 import { Auth } from '../models/auth.model';
 
+
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-restaurants',
+  templateUrl: './restaurants.component.html',
+  styleUrls: ['./restaurants.component.css']
 })
-export class HomeComponent implements OnInit {
+export class RestaurantsComponent implements OnInit {
   user: Auth;
+  faSearch = faSearch;
   query: string;
   zomatoData: ZomatoSearch;
   restaurants: Array<any>;
@@ -21,11 +24,11 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private restaurantService: RestaurantService,
-    private authService: AuthenticationService
-  ) { }
+    private authService: AuthenticationService) 
+  {}
 
-  /**
-   * Initializes the home component
+   /**
+   * Initializes the restaurants component
    */
   ngOnInit(): void {
     this.authService.getLoggedUserId().subscribe((userLog: any) => {

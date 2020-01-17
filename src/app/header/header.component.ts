@@ -1,8 +1,9 @@
-import { Component, OnInit, ViewChild, ElementRef, OnDestroy, HostListener, Renderer2, AfterViewInit, Output, EventEmitter, Input } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, OnDestroy, HostListener, Renderer2, AfterViewInit } from '@angular/core';
 import { Auth } from '../models/auth.model';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { AuthenticationService } from '../services/authentication.service';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +16,8 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnDestroy {
   user: Auth;
   title = "Cuisine Hunter";
   sticky: number;
+  faSearch = faSearch;
+  showFaSearch = true;
 
   constructor(
     private authService: AuthenticationService,
@@ -30,6 +33,14 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnDestroy {
         this.authService.getUserDetails(userLog[0].userId).subscribe((user: any) => {
           this.user = user[0];
         });
+      }
+    });
+
+    this.router.events.subscribe(params => {
+      if (params instanceof NavigationEnd && params.url.includes('restaurants')) {
+        this.showFaSearch = false;
+      } else if (params instanceof NavigationEnd && !params.url.includes('restaurants')) {
+        this.showFaSearch = true;
       }
     });
   }

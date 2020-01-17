@@ -47,3 +47,27 @@
   height: 40px;
   margin-right: 5px;
 }
+
+.btn-rest-search-nav {
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-color: #ffc107;
+  border-radius: 50%;
+  padding: 5px 11px;
+}
+.btn-rest-search-nav:hover {
+  border-color: #e0a800;
+}
+.btn-rest-search-nav:not(:disabled):not(.disabled).active, .btn-rest-search-nav:not(:disabled):not(.disabled):active, .show>.btn-rest-search-nav.dropdown-toggle {
+  color: #212529;
+  background-color: #d39e00;
+  border-color: #d39e00;
+}
+.btn-rest-search-nav.focus, .btn-rest-search-nav:focus {
+  box-shadow: 3px 0 5px 3px rgba(255,193,7,.5);
+}
+.btn-rest-search-nav:not(:hover) {
+  box-shadow: none;
+}
