@@ -9,57 +9,24 @@
       </button>
     </div>
   </form>
-  <!-- Table Begins Here 
-  <div class="table-content" *ngIf="showGrid">
-    <table class="table table-striped table-hover">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Name</th>
-          <th scope="col">Rating</th>
-          <th scope="col">Address</th>
-          <th scope="col">Cuisines</th>
-          <th scope="col">Menu</th>
-          <th scope="col">Zomato Link</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let restaurant of restaurants">
-          <th scope="row">{{ restaurant.id }}</th>
-          <td>{{ restaurant.name }}</td>
-          <td>{{ restaurant.rating }}</td>
-          <td>{{ restaurant.address }}</td>
-          <td>{{ restaurant.cuisines }}</td>
-          <td><button type="button" class="btn btn-outline-primary" (click)="navigateExternalLink(restaurant.menu)">Menu
-              Link</button></td>
-          <td><button type="button" class="btn btn-outline-danger"
-              (click)="navigateExternalLink(restaurant.link)">Restaurant Link</button></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>-->
   <!--Card Begins Here-->
-  <div class="table-content" *ngIf="showGrid">
-    <table class="table table-striped table-hover">
-      <thead class="thead-dark">
-        <tr>
-        </tr>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">{{ restaurant.name }}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{{ restaurant.rating }}</h6>
-            <h6 class="card-subtitle mb-2 text-muted">{{ restaurant.address }}</h6>
-            <h6 class="card-subtitle mb-2 text-muted">{{ restaurant.cuisines }}</h6>
-            <button type="button" class="btn btn-outline-primary" (click)="navigateExternalLink(restaurant.menu)">Menu
-              Link</button>
-            <button type="button" class="btn btn-outline-danger"
-              (click)="navigateExternalLink(restaurant.link)">Restaurant
-              Link</button>
-          </div>
-          </div>
-      </thead>
-    </table>
+  <div class="card-container">
+    <div class="row card-row">
+      <div class="card card-custom col-4" *ngFor="let restaurant of restaurants" style="width: 18rem;">
+        <img class="card-img-top" src="{{restaurant.thumb}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">#{{ restaurant.id }} - {{ restaurant.name }} | {{ restaurant.rating }}</h5>
+          <p class="card-text">{{ restaurant.cuisines }}</p>
+          <button type="button" class="btn btn-outline-primary" (click)="navigateExternalLink(restaurant.menu)">Menu
+            Link</button>
+          <button type="button" class="btn btn-outline-danger"
+            (click)="navigateExternalLink(restaurant.link)">Restaurant
+            Link</button>
+        </div>
+      </div>
+    </div>
   </div>
+  <!-- Empty Grid Error Message -->
   <div class="table-msg" *ngIf="!showGrid">
     <h3>Search for Restaurants and Order from their Menu</h3>
   </div>

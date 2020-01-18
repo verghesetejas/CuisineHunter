@@ -79,6 +79,7 @@ export class RestaurantsComponent implements OnInit {
           rating: this.zomatoData.restaurants[i].restaurant.user_rating.aggregate_rating,
           address: this.zomatoData.restaurants[i].restaurant.location.address,
           cuisines: this.zomatoData.restaurants[i].restaurant.cuisines,
+          thumb: this.zomatoData.restaurants[i].restaurant.thumb,
           menu: this.zomatoData.restaurants[i].restaurant.menu_url,
           link: this.zomatoData.restaurants[i].restaurant.url,
         };

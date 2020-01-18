@@ -20,6 +20,12 @@
   background-color: #bb0f0f !important;
 }
 
+.align-right {
+  position: absolute;
+  top: auto;
+  right: 25px;
+}
+
 .div-right {
   position: absolute;
   top: 50%;
@@ -38,6 +44,11 @@
 
 .hide {
   display: none;
+}
+
+.dropdown-menu.show {
+  right: 0;
+  z-index: 99999;
 }
 
 .profile-pic {

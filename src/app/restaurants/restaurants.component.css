@@ -1,12 +1,20 @@
 @import '../shared/shared.css';
 
-.table-content {
-  margin-top: 10px;
+.card-container {
+  width: 100%;
+  position: relative;
 }
 
-.table .thead-dark th {
-  background-color: #343a40;
-  border-color: #343a40;
+.card-row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-custom {
+  text-align: center;
+  margin: 10px 11px;
 }
 
 .table-msg {
@@ -21,4 +29,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: grey;
+}
+
+.card-img-top {
+  height: 300px;
+  width: 300px;
 }
