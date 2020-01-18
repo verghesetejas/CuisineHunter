@@ -6,15 +6,14 @@
 }
 
 .card-row {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .card-custom {
   text-align: center;
-  margin: 10px 11px;
+  margin: 3% 21%;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.25);
 }
 
 .table-msg {
@@ -31,7 +30,33 @@
   color: grey;
 }
 
+.btn {
+  margin: 5px 10px;
+}
+
+.image-container {
+  position: relative;
+}
+
 .card-img-top {
   height: 300px;
   width: 300px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.golden {
+  color: gold;
+  padding: 5px;
+}
+
+.box-grey {
+  background-color: gold;
+  color: black;
+  border-radius: 5px;
+  padding: 0px 3px 3px 3px;
+}
+
+.align-left {
+  text-align: left;
 }

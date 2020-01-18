@@ -1,240 +1,154 @@
-2020-01-17T20:34:30.059Z : Listening to port: 1337...
-2020-01-17T20:34:30.141Z : Connected!
-2020-01-17T20:34:44.167Z : Retrieving Logged-in User
-2020-01-17T20:34:44.235Z : Retrieving Logged-in User
-2020-01-17T20:37:58.220Z : Retrieving User: verghesetejas
-2020-01-17T20:37:58.227Z : Retrieving User ID: 2
-2020-01-17T20:37:58.453Z : Loading Current User
-2020-01-17T20:37:58.484Z : Retrieving Logged-in User
-2020-01-17T20:37:58.504Z : Retrieving User ID: 2
-2020-01-17T20:38:03.677Z : Retrieving Logged-in User
-2020-01-17T20:38:03.692Z : Retrieving User ID: 2
-2020-01-17T20:38:05.869Z : Removing All Logged Users
-2020-01-17T20:38:05.895Z : Retrieving Logged-in User
-2020-01-17T20:43:28.022Z : Retrieving Logged-in User
-2020-01-17T20:43:28.084Z : Retrieving Logged-in User
-2020-01-17T20:43:50.540Z : Retrieving Logged-in User
-2020-01-17T20:43:50.581Z : Retrieving Logged-in User
-2020-01-17T20:44:05.450Z : Retrieving Logged-in User
-2020-01-17T20:44:05.484Z : Retrieving Logged-in User
-2020-01-17T20:49:26.669Z : Retrieving Logged-in User
-2020-01-17T20:49:26.743Z : Retrieving Logged-in User
-2020-01-17T20:49:45.881Z : Retrieving User: verghesetejas
-2020-01-17T20:49:45.889Z : Retrieving User ID: 2
-2020-01-17T20:49:45.902Z : Loading Current User
-2020-01-17T20:49:45.919Z : Retrieving Logged-in User
-2020-01-17T20:49:45.940Z : Retrieving User ID: 2
-2020-01-17T20:53:37.759Z : Retrieving Logged-in User
-2020-01-17T20:53:37.854Z : Retrieving Logged-in User
-2020-01-17T20:53:37.941Z : Retrieving User ID: 2
-2020-01-17T20:53:37.952Z : Retrieving User ID: 2
-2020-01-17T21:06:48.077Z : Retrieving Logged-in User
-2020-01-17T21:06:48.168Z : Retrieving Logged-in User
-2020-01-17T21:06:48.196Z : Retrieving User ID: 2
-2020-01-17T21:06:48.276Z : Retrieving User ID: 2
-2020-01-17T21:09:04.848Z : Retrieving Logged-in User
-2020-01-17T21:09:04.870Z : Retrieving User ID: 2
-2020-01-17T21:09:09.908Z : Retrieving Logged-in User
-2020-01-17T21:09:09.934Z : Retrieving User ID: 2
-2020-01-17T21:11:17.266Z : Retrieving Logged-in User
-2020-01-17T21:11:17.356Z : Retrieving Logged-in User
-2020-01-17T21:11:17.405Z : Retrieving User ID: 2
-2020-01-17T21:11:17.506Z : Retrieving User ID: 2
-2020-01-17T21:11:48.893Z : Retrieving Logged-in User
-2020-01-17T21:11:48.972Z : Retrieving Logged-in User
-2020-01-17T21:11:49.050Z : Retrieving User ID: 2
-2020-01-17T21:11:49.058Z : Retrieving User ID: 2
-2020-01-17T21:15:35.758Z : Retrieving Logged-in User
-2020-01-17T21:15:35.854Z : Retrieving Logged-in User
-2020-01-17T21:15:35.949Z : Retrieving User ID: 2
-2020-01-17T21:15:35.956Z : Retrieving User ID: 2
-2020-01-17T21:16:23.208Z : Retrieving Logged-in User
-2020-01-17T21:16:23.302Z : Retrieving Logged-in User
-2020-01-17T21:16:23.346Z : Retrieving User ID: 2
-2020-01-17T21:16:23.418Z : Retrieving User ID: 2
-2020-01-17T21:16:37.339Z : Retrieving Logged-in User
-2020-01-17T21:16:37.357Z : Retrieving User ID: 2
-2020-01-17T21:17:03.717Z : Retrieving Logged-in User
-2020-01-17T21:17:03.738Z : Retrieving User ID: 2
-2020-01-17T21:17:03.753Z : Retrieving User History for ID: 2
-2020-01-17T21:17:09.959Z : Retrieving Logged-in User
-2020-01-17T21:17:09.980Z : Retrieving User ID: 2
-2020-01-17T21:17:14.881Z : Retrieving Logged-in User
-2020-01-17T21:17:14.894Z : Retrieving User ID: 2
-2020-01-17T21:17:14.903Z : Retrieving User History for ID: 2
-2020-01-17T21:17:16.965Z : Retrieving Logged-in User
-2020-01-17T21:17:16.986Z : Retrieving User ID: 2
-2020-01-17T21:17:18.266Z : Retrieving Logged-in User
-2020-01-17T21:17:18.296Z : Retrieving User ID: 2
-2020-01-17T21:17:40.079Z : Retrieving Logged-in User
-2020-01-17T21:17:40.096Z : Retrieving User ID: 2
-2020-01-17T21:17:44.544Z : Retrieving Logged-in User
-2020-01-17T21:17:44.630Z : Retrieving Logged-in User
-2020-01-17T21:17:44.656Z : Retrieving User ID: 2
-2020-01-17T21:17:44.743Z : Retrieving User ID: 2
-2020-01-17T21:55:18.313Z : Removing All Logged Users
-2020-01-17T21:55:28.064Z : Retrieving User: verghesetejas
-2020-01-17T21:55:28.076Z : Retrieving User ID: 2
-2020-01-17T21:55:28.098Z : Loading Current User
-2020-01-17T21:55:28.121Z : Retrieving Logged-in User
-2020-01-17T21:55:28.140Z : Retrieving User ID: 2
-2020-01-17T22:09:30.381Z : Retrieving Logged-in User
-2020-01-17T22:09:30.506Z : Retrieving Logged-in User
-2020-01-17T22:09:30.541Z : Retrieving User ID: 2
-2020-01-17T22:09:30.658Z : Retrieving User ID: 2
-2020-01-17T22:10:07.959Z : Retrieving Logged-in User
-2020-01-17T22:10:08.061Z : Retrieving Logged-in User
-2020-01-17T22:10:08.090Z : Retrieving User ID: 2
-2020-01-17T22:10:08.161Z : Retrieving User ID: 2
-2020-01-17T22:10:17.510Z : Retrieving Logged-in User
-2020-01-17T22:10:17.524Z : Retrieving User ID: 2
-2020-01-17T22:12:29.173Z : Posting to User History
-2020-01-17T22:12:33.201Z : Posting to User History
-2020-01-17T22:12:38.852Z : Posting to User History
-2020-01-17T22:12:43.006Z : Posting to User History
-2020-01-17T22:16:01.257Z : Retrieving Logged-in User
-2020-01-17T22:16:01.324Z : Retrieving Logged-in User
-2020-01-17T22:16:01.407Z : Retrieving User ID: 2
-2020-01-17T22:16:01.413Z : Retrieving User ID: 2
-2020-01-17T22:19:36.201Z : Retrieving Logged-in User
-2020-01-17T22:19:36.271Z : Retrieving Logged-in User
-2020-01-17T22:19:36.374Z : Retrieving User ID: 2
-2020-01-17T22:19:36.383Z : Retrieving User ID: 2
-2020-01-17T22:20:19.787Z : Retrieving Logged-in User
-2020-01-17T22:20:19.885Z : Retrieving Logged-in User
-2020-01-17T22:20:19.971Z : Retrieving User ID: 2
-2020-01-17T22:20:19.979Z : Retrieving User ID: 2
-2020-01-17T22:23:55.112Z : Retrieving Logged-in User
-2020-01-17T22:23:55.190Z : Retrieving Logged-in User
-2020-01-17T22:23:55.226Z : Retrieving User ID: 2
-2020-01-17T22:23:55.236Z : Retrieving User ID: 2
-2020-01-17T22:25:02.397Z : Retrieving Logged-in User
-2020-01-17T22:25:02.471Z : Retrieving Logged-in User
-2020-01-17T22:25:02.551Z : Retrieving User ID: 2
-2020-01-17T22:25:02.559Z : Retrieving User ID: 2
-2020-01-17T22:25:47.681Z : Retrieving Logged-in User
-2020-01-17T22:25:47.768Z : Retrieving Logged-in User
-2020-01-17T22:25:47.888Z : Retrieving User ID: 2
-2020-01-17T22:25:47.898Z : Retrieving User ID: 2
-2020-01-17T22:26:06.111Z : Retrieving Logged-in User
-2020-01-17T22:26:06.184Z : Retrieving Logged-in User
-2020-01-17T22:26:06.285Z : Retrieving User ID: 2
-2020-01-17T22:26:06.291Z : Retrieving User ID: 2
-2020-01-17T22:26:58.640Z : Retrieving Logged-in User
-2020-01-17T22:26:58.709Z : Retrieving Logged-in User
-2020-01-17T22:26:58.787Z : Retrieving User ID: 2
-2020-01-17T22:26:58.797Z : Retrieving User ID: 2
-2020-01-17T22:27:00.840Z : Retrieving Logged-in User
-2020-01-17T22:27:00.933Z : Retrieving Logged-in User
-2020-01-17T22:27:01.080Z : Retrieving User ID: 2
-2020-01-17T22:27:01.099Z : Retrieving User ID: 2
-2020-01-17T22:28:18.069Z : Retrieving Logged-in User
-2020-01-17T22:28:18.145Z : Retrieving Logged-in User
-2020-01-17T22:28:18.237Z : Retrieving User ID: 2
-2020-01-17T22:28:18.243Z : Retrieving User ID: 2
-2020-01-17T22:29:53.756Z : Retrieving Logged-in User
-2020-01-17T22:29:53.872Z : Retrieving Logged-in User
-2020-01-17T22:29:53.972Z : Retrieving User ID: 2
-2020-01-17T22:29:53.977Z : Retrieving User ID: 2
-2020-01-17T22:30:15.290Z : Retrieving Logged-in User
-2020-01-17T22:30:15.363Z : Retrieving Logged-in User
-2020-01-17T22:30:15.463Z : Retrieving User ID: 2
-2020-01-17T22:30:15.469Z : Retrieving User ID: 2
-2020-01-17T22:32:39.604Z : Retrieving Logged-in User
-2020-01-17T22:32:39.678Z : Retrieving Logged-in User
-2020-01-17T22:32:39.767Z : Retrieving User ID: 2
-2020-01-17T22:32:39.778Z : Retrieving User ID: 2
-2020-01-17T22:40:50.084Z : Retrieving Logged-in User
-2020-01-17T22:40:50.191Z : Retrieving Logged-in User
-2020-01-17T22:40:50.371Z : Retrieving User ID: 2
-2020-01-17T22:40:50.421Z : Retrieving User ID: 2
-2020-01-17T22:40:59.149Z : Retrieving Logged-in User
-2020-01-17T22:40:59.216Z : Retrieving Logged-in User
-2020-01-17T22:40:59.316Z : Retrieving User ID: 2
-2020-01-17T22:40:59.320Z : Retrieving User ID: 2
-2020-01-17T22:41:21.276Z : Retrieving Logged-in User
-2020-01-17T22:41:21.356Z : Retrieving Logged-in User
-2020-01-17T22:41:21.534Z : Retrieving User ID: 2
-2020-01-17T22:41:21.539Z : Retrieving User ID: 2
-2020-01-17T22:41:33.999Z : Retrieving Logged-in User
-2020-01-17T22:41:34.030Z : Retrieving User ID: 2
-2020-01-17T22:43:08.052Z : Retrieving Logged-in User
-2020-01-17T22:43:08.135Z : Retrieving Logged-in User
-2020-01-17T22:43:08.179Z : Retrieving User ID: 2
-2020-01-17T22:43:08.252Z : Retrieving User ID: 2
-2020-01-17T22:43:46.253Z : Retrieving Logged-in User
-2020-01-17T22:43:46.274Z : Retrieving User ID: 2
-2020-01-17T22:43:54.775Z : Retrieving Logged-in User
-2020-01-17T22:43:54.799Z : Retrieving User ID: 2
-2020-01-17T22:43:56.599Z : Retrieving Logged-in User
-2020-01-17T22:43:56.620Z : Retrieving User ID: 2
-2020-01-17T22:43:58.988Z : Retrieving Logged-in User
-2020-01-17T22:43:59.003Z : Retrieving User ID: 2
-2020-01-17T22:44:04.356Z : Retrieving Logged-in User
-2020-01-17T22:44:04.424Z : Retrieving Logged-in User
-2020-01-17T22:44:04.502Z : Retrieving User ID: 2
-2020-01-17T22:44:04.511Z : Retrieving User ID: 2
-2020-01-17T22:44:05.785Z : Retrieving Logged-in User
-2020-01-17T22:44:05.828Z : Retrieving User ID: 2
-2020-01-17T22:44:34.162Z : Retrieving Logged-in User
-2020-01-17T22:44:34.179Z : Retrieving User ID: 2
-2020-01-17T22:44:37.584Z : Retrieving Logged-in User
-2020-01-17T22:44:37.610Z : Retrieving User ID: 2
-2020-01-17T22:46:34.114Z : Retrieving Logged-in User
-2020-01-17T22:46:34.190Z : Retrieving Logged-in User
-2020-01-17T22:46:34.287Z : Retrieving User ID: 2
-2020-01-17T22:46:34.292Z : Retrieving User ID: 2
-2020-01-17T22:47:42.117Z : Retrieving Logged-in User
-2020-01-17T22:47:42.140Z : Retrieving User ID: 2
-2020-01-17T22:57:37.484Z : Retrieving Logged-in User
-2020-01-17T22:57:37.563Z : Retrieving Logged-in User
-2020-01-17T22:57:37.601Z : Retrieving User ID: 2
-2020-01-17T22:57:37.673Z : Retrieving User ID: 2
-2020-01-17T23:00:33.780Z : Retrieving Logged-in User
-2020-01-17T23:00:33.852Z : Retrieving Logged-in User
-2020-01-17T23:00:33.882Z : Retrieving User ID: 2
-2020-01-17T23:00:33.948Z : Retrieving User ID: 2
-2020-01-17T23:00:37.883Z : Retrieving Logged-in User
-2020-01-17T23:00:37.947Z : Retrieving Logged-in User
-2020-01-17T23:00:38.035Z : Retrieving User ID: 2
-2020-01-17T23:00:38.047Z : Retrieving User ID: 2
-2020-01-17T23:00:56.705Z : Retrieving Logged-in User
-2020-01-17T23:00:56.768Z : Retrieving Logged-in User
-2020-01-17T23:00:56.853Z : Retrieving User ID: 2
-2020-01-17T23:00:56.857Z : Retrieving User ID: 2
-2020-01-17T23:02:25.223Z : Retrieving Logged-in User
-2020-01-17T23:02:25.294Z : Retrieving Logged-in User
-2020-01-17T23:02:25.386Z : Retrieving User ID: 2
-2020-01-17T23:02:25.402Z : Retrieving User ID: 2
-2020-01-17T23:03:22.237Z : Retrieving Logged-in User
-2020-01-17T23:03:22.299Z : Retrieving Logged-in User
-2020-01-17T23:03:22.382Z : Retrieving User ID: 2
-2020-01-17T23:03:22.389Z : Retrieving User ID: 2
-2020-01-17T23:04:03.721Z : Retrieving Logged-in User
-2020-01-17T23:04:03.805Z : Retrieving Logged-in User
-2020-01-17T23:04:03.907Z : Retrieving User ID: 2
-2020-01-17T23:04:03.914Z : Retrieving User ID: 2
-2020-01-17T23:06:30.690Z : Retrieving Logged-in User
-2020-01-17T23:06:30.754Z : Retrieving Logged-in User
-2020-01-17T23:06:30.860Z : Retrieving User ID: 2
-2020-01-17T23:06:30.865Z : Retrieving User ID: 2
-2020-01-17T23:06:36.398Z : Retrieving Logged-in User
-2020-01-17T23:06:36.464Z : Retrieving Logged-in User
-2020-01-17T23:06:36.580Z : Retrieving User ID: 2
-2020-01-17T23:06:36.597Z : Retrieving User ID: 2
-2020-01-17T23:07:52.254Z : Retrieving Logged-in User
-2020-01-17T23:07:52.330Z : Retrieving Logged-in User
-2020-01-17T23:07:52.431Z : Retrieving User ID: 2
-2020-01-17T23:07:52.439Z : Retrieving User ID: 2
-2020-01-17T23:08:05.891Z : Retrieving Logged-in User
-2020-01-17T23:08:05.952Z : Retrieving Logged-in User
-2020-01-17T23:08:06.036Z : Retrieving User ID: 2
-2020-01-17T23:08:06.043Z : Retrieving User ID: 2
-2020-01-17T23:08:27.205Z : Retrieving Logged-in User
-2020-01-17T23:08:27.272Z : Retrieving Logged-in User
-2020-01-17T23:08:27.347Z : Retrieving User ID: 2
-2020-01-17T23:08:27.359Z : Retrieving User ID: 2
-2020-01-17T23:10:42.625Z : Retrieving Logged-in User
-2020-01-17T23:10:42.699Z : Retrieving Logged-in User
-2020-01-17T23:10:42.782Z : Retrieving User ID: 2
-2020-01-17T23:10:42.792Z : Retrieving User ID: 2
+2020-01-18T20:11:41.665Z : Listening to port: 1337...
+2020-01-18T20:11:41.726Z : Connected!
+2020-01-18T20:55:54.295Z : Retrieving Logged-in User
+2020-01-18T20:55:54.386Z : Retrieving Logged-in User
+2020-01-18T20:55:54.524Z : Retrieving User ID: 2
+2020-01-18T20:55:54.554Z : Retrieving User ID: 2
+2020-01-18T20:55:59.414Z : Retrieving Logged-in User
+2020-01-18T20:55:59.455Z : Retrieving User ID: 2
+2020-01-18T20:56:50.548Z : Retrieving Logged-in User
+2020-01-18T20:56:50.567Z : Retrieving User ID: 2
+2020-01-18T20:58:28.545Z : Retrieving Logged-in User
+2020-01-18T20:58:28.606Z : Retrieving Logged-in User
+2020-01-18T20:58:28.678Z : Retrieving User ID: 2
+2020-01-18T20:58:28.687Z : Retrieving User ID: 2
+2020-01-18T21:07:01.712Z : Retrieving Logged-in User
+2020-01-18T21:07:01.753Z : Retrieving User ID: 2
+2020-01-18T21:07:03.839Z : Retrieving Logged-in User
+2020-01-18T21:07:03.859Z : Retrieving User ID: 2
+2020-01-18T21:07:07.350Z : Retrieving Logged-in User
+2020-01-18T21:07:07.370Z : Retrieving User ID: 2
+2020-01-18T21:07:10.204Z : Retrieving Logged-in User
+2020-01-18T21:07:10.224Z : Retrieving User ID: 2
+2020-01-18T21:08:31.643Z : Retrieving Logged-in User
+2020-01-18T21:08:31.676Z : Retrieving User ID: 2
+2020-01-18T21:08:35.330Z : Retrieving Logged-in User
+2020-01-18T21:08:35.367Z : Retrieving User ID: 2
+2020-01-18T21:11:50.831Z : Retrieving Logged-in User
+2020-01-18T21:11:50.913Z : Retrieving Logged-in User
+2020-01-18T21:11:51.014Z : Retrieving User ID: 2
+2020-01-18T21:11:51.026Z : Retrieving User ID: 2
+2020-01-18T21:14:47.578Z : Retrieving Logged-in User
+2020-01-18T21:14:47.749Z : Retrieving Logged-in User
+2020-01-18T21:14:47.796Z : Retrieving User ID: 2
+2020-01-18T21:14:47.848Z : Retrieving User ID: 2
+2020-01-18T21:15:01.521Z : Retrieving Logged-in User
+2020-01-18T21:15:01.598Z : Retrieving Logged-in User
+2020-01-18T21:15:01.692Z : Retrieving User ID: 2
+2020-01-18T21:15:01.700Z : Retrieving User ID: 2
+2020-01-18T21:22:15.087Z : Retrieving Logged-in User
+2020-01-18T21:22:15.165Z : Retrieving Logged-in User
+2020-01-18T21:22:15.275Z : Retrieving User ID: 2
+2020-01-18T21:22:15.284Z : Retrieving User ID: 2
+2020-01-18T21:22:20.292Z : Retrieving Logged-in User
+2020-01-18T21:22:20.366Z : Retrieving Logged-in User
+2020-01-18T21:22:20.457Z : Retrieving User ID: 2
+2020-01-18T21:22:20.467Z : Retrieving User ID: 2
+2020-01-18T21:23:49.544Z : Retrieving Logged-in User
+2020-01-18T21:23:49.634Z : Retrieving Logged-in User
+2020-01-18T21:23:49.737Z : Retrieving User ID: 2
+2020-01-18T21:23:49.743Z : Retrieving User ID: 2
+2020-01-18T21:25:55.084Z : Retrieving Logged-in User
+2020-01-18T21:25:55.200Z : Retrieving Logged-in User
+2020-01-18T21:25:55.331Z : Retrieving User ID: 2
+2020-01-18T21:25:55.341Z : Retrieving User ID: 2
+2020-01-18T21:27:29.054Z : Retrieving Logged-in User
+2020-01-18T21:27:29.205Z : Retrieving Logged-in User
+2020-01-18T21:27:29.350Z : Retrieving User ID: 2
+2020-01-18T21:27:29.357Z : Retrieving User ID: 2
+2020-01-18T21:27:55.317Z : Retrieving Logged-in User
+2020-01-18T21:27:55.384Z : Retrieving Logged-in User
+2020-01-18T21:27:55.495Z : Retrieving User ID: 2
+2020-01-18T21:27:55.500Z : Retrieving User ID: 2
+2020-01-18T21:28:28.687Z : Retrieving Logged-in User
+2020-01-18T21:28:28.761Z : Retrieving Logged-in User
+2020-01-18T21:28:28.860Z : Retrieving User ID: 2
+2020-01-18T21:28:28.869Z : Retrieving User ID: 2
+2020-01-18T21:30:35.775Z : Retrieving Logged-in User
+2020-01-18T21:30:35.843Z : Retrieving Logged-in User
+2020-01-18T21:30:35.946Z : Retrieving User ID: 2
+2020-01-18T21:30:35.955Z : Retrieving User ID: 2
+2020-01-18T21:33:28.293Z : Retrieving Logged-in User
+2020-01-18T21:33:28.381Z : Retrieving Logged-in User
+2020-01-18T21:33:28.490Z : Retrieving User ID: 2
+2020-01-18T21:33:28.496Z : Retrieving User ID: 2
+2020-01-18T21:35:54.926Z : Retrieving Logged-in User
+2020-01-18T21:35:55.003Z : Retrieving Logged-in User
+2020-01-18T21:35:55.035Z : Retrieving User ID: 2
+2020-01-18T21:35:55.115Z : Retrieving User ID: 2
+2020-01-18T21:39:05.408Z : Retrieving Logged-in User
+2020-01-18T21:39:08.543Z : Retrieving Logged-in User
+2020-01-18T21:39:09.716Z : Retrieving User ID: 2
+2020-01-18T21:39:09.944Z : Retrieving User ID: 2
+2020-01-18T21:39:23.021Z : Retrieving Logged-in User
+2020-01-18T21:39:23.111Z : Retrieving Logged-in User
+2020-01-18T21:39:23.143Z : Retrieving User ID: 2
+2020-01-18T21:39:23.224Z : Retrieving User ID: 2
+2020-01-18T21:40:03.973Z : Retrieving Logged-in User
+2020-01-18T21:40:04.057Z : Retrieving Logged-in User
+2020-01-18T21:40:04.182Z : Retrieving User ID: 2
+2020-01-18T21:40:04.200Z : Retrieving User ID: 2
+2020-01-18T21:40:28.588Z : Retrieving Logged-in User
+2020-01-18T21:40:28.686Z : Retrieving Logged-in User
+2020-01-18T21:40:28.815Z : Retrieving User ID: 2
+2020-01-18T21:40:28.832Z : Retrieving User ID: 2
+2020-01-18T21:45:37.854Z : Retrieving Logged-in User
+2020-01-18T21:45:37.944Z : Retrieving Logged-in User
+2020-01-18T21:45:38.042Z : Retrieving User ID: 2
+2020-01-18T21:45:38.053Z : Retrieving User ID: 2
+2020-01-18T21:47:01.639Z : Retrieving Logged-in User
+2020-01-18T21:47:01.752Z : Retrieving Logged-in User
+2020-01-18T21:47:01.883Z : Retrieving User ID: 2
+2020-01-18T21:47:01.890Z : Retrieving User ID: 2
+2020-01-18T21:51:01.674Z : Retrieving Logged-in User
+2020-01-18T21:51:01.767Z : Retrieving Logged-in User
+2020-01-18T21:51:01.865Z : Retrieving User ID: 2
+2020-01-18T21:51:01.875Z : Retrieving User ID: 2
+2020-01-18T21:51:42.391Z : Retrieving Logged-in User
+2020-01-18T21:51:42.477Z : Retrieving Logged-in User
+2020-01-18T21:51:42.609Z : Retrieving User ID: 2
+2020-01-18T21:51:42.626Z : Retrieving User ID: 2
+2020-01-18T21:52:09.232Z : Retrieving Logged-in User
+2020-01-18T21:52:09.318Z : Retrieving Logged-in User
+2020-01-18T21:52:09.438Z : Retrieving User ID: 2
+2020-01-18T21:52:09.454Z : Retrieving User ID: 2
+2020-01-18T21:53:15.715Z : Retrieving Logged-in User
+2020-01-18T21:53:15.789Z : Retrieving Logged-in User
+2020-01-18T21:53:15.880Z : Retrieving User ID: 2
+2020-01-18T21:53:15.891Z : Retrieving User ID: 2
+2020-01-18T21:53:58.089Z : Retrieving Logged-in User
+2020-01-18T21:53:58.165Z : Retrieving Logged-in User
+2020-01-18T21:53:58.278Z : Retrieving User ID: 2
+2020-01-18T21:53:58.282Z : Retrieving User ID: 2
+2020-01-18T21:55:16.090Z : Retrieving Logged-in User
+2020-01-18T21:55:16.170Z : Retrieving Logged-in User
+2020-01-18T21:55:16.277Z : Retrieving User ID: 2
+2020-01-18T21:55:16.287Z : Retrieving User ID: 2
+2020-01-18T21:55:34.276Z : Retrieving Logged-in User
+2020-01-18T21:55:34.386Z : Retrieving Logged-in User
+2020-01-18T21:55:34.498Z : Retrieving User ID: 2
+2020-01-18T21:55:34.503Z : Retrieving User ID: 2
+2020-01-18T21:58:37.816Z : Retrieving Logged-in User
+2020-01-18T21:58:37.883Z : Retrieving Logged-in User
+2020-01-18T21:58:37.962Z : Retrieving User ID: 2
+2020-01-18T21:58:37.968Z : Retrieving User ID: 2
+2020-01-18T22:01:52.103Z : Retrieving Logged-in User
+2020-01-18T22:01:52.176Z : Retrieving Logged-in User
+2020-01-18T22:01:52.260Z : Retrieving User ID: 2
+2020-01-18T22:01:52.271Z : Retrieving User ID: 2
+2020-01-18T22:03:42.430Z : Retrieving Logged-in User
+2020-01-18T22:03:42.498Z : Retrieving Logged-in User
+2020-01-18T22:03:42.578Z : Retrieving User ID: 2
+2020-01-18T22:03:42.586Z : Retrieving User ID: 2
+2020-01-18T22:04:05.230Z : Retrieving Logged-in User
+2020-01-18T22:04:05.303Z : Retrieving Logged-in User
+2020-01-18T22:04:05.390Z : Retrieving User ID: 2
+2020-01-18T22:04:05.400Z : Retrieving User ID: 2
+2020-01-18T22:05:33.440Z : Retrieving Logged-in User
+2020-01-18T22:05:33.521Z : Retrieving Logged-in User
+2020-01-18T22:05:33.620Z : Retrieving User ID: 2
+2020-01-18T22:05:33.626Z : Retrieving User ID: 2
+2020-01-18T22:06:30.131Z : Retrieving Logged-in User
+2020-01-18T22:06:30.191Z : Retrieving User ID: 2
+2020-01-18T22:06:36.950Z : Retrieving Logged-in User
+2020-01-18T22:06:36.982Z : Retrieving User ID: 2

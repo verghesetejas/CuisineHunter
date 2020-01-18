@@ -12,16 +12,22 @@
   <!--Card Begins Here-->
   <div class="card-container">
     <div class="row card-row">
-      <div class="card card-custom col-4" *ngFor="let restaurant of restaurants" style="width: 18rem;">
-        <img class="card-img-top" src="{{restaurant.thumb}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">#{{ restaurant.id }} - {{ restaurant.name }} | {{ restaurant.rating }}</h5>
-          <p class="card-text">{{ restaurant.cuisines }}</p>
-          <button type="button" class="btn btn-outline-primary" (click)="navigateExternalLink(restaurant.menu)">Menu
-            Link</button>
-          <button type="button" class="btn btn-outline-danger"
-            (click)="navigateExternalLink(restaurant.link)">Restaurant
-            Link</button>
+      <div class="col-sm-4" *ngFor="let restaurant of restaurants">
+        <div class="card card-custom" style="width: 21rem;">
+          <div class="image-container">
+            <img class="card-img-top" src="{{restaurant.thumb}}" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><strong class="box-grey">#{{ restaurant.id }}</strong> {{ restaurant.name }}</h5>
+            <p class="card-text align-left"><strong>Ratings - {{ restaurant.rating }}</strong><fa-icon class="golden" [icon]="faStar"></fa-icon></p>
+            <p class="card-text align-left"><strong>Cuisines - </strong>{{ restaurant.cuisines }}</p>
+            <p class="card-text align-left"><strong>Address - </strong>{{ restaurant.address }}</p>
+            <button type="button" class="btn btn-outline-primary" (click)="navigateExternalLink(restaurant.menu)">Menu
+              Link</button>
+            <button type="button" class="btn btn-outline-danger"
+              (click)="navigateExternalLink(restaurant.link)">Restaurant
+              Link</button>
+          </div>
         </div>
       </div>
     </div>

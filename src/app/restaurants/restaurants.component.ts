@@ -3,7 +3,7 @@ import { NgForm } from '@angular/forms';
 
 import { RestaurantService } from '../services/restaurant.service';
 import { ZomatoSearch } from '../models/zomato-search.model';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faStar } from '@fortawesome/free-solid-svg-icons';
 import { AuthenticationService } from '../services/authentication.service';
 import { Auth } from '../models/auth.model';
 
@@ -16,6 +16,7 @@ import { Auth } from '../models/auth.model';
 export class RestaurantsComponent implements OnInit {
   user: Auth;
   faSearch = faSearch;
+  faStar = faStar;
   query: string;
   zomatoData: ZomatoSearch;
   restaurants: Array<any>;
