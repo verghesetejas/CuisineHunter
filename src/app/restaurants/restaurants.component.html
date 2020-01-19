@@ -15,7 +15,8 @@
       <div class="col-sm-4" *ngFor="let restaurant of restaurants">
         <div class="card card-custom" style="width: 21rem;">
           <div class="image-container">
-            <img class="card-img-top" src="{{restaurant.thumb}}" alt="Card image cap">
+            <img class="card-img-top" *ngIf="restaurant.thumb" src="{{ restaurant.thumb }}" alt="{{ restaurant.name }}">
+            <img class="card-img-top" *ngIf="!restaurant.thumb" src="../../assets/images/default.jpg" alt="{{ restaurant.name }}">
           </div>
           <div class="card-body">
             <h5 class="card-title"><strong class="box-grey">#{{ restaurant.id }}</strong> {{ restaurant.name }}</h5>
