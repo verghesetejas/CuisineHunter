@@ -45,7 +45,12 @@ yarn-error.log
 testem.log
 /typings
 /backend/logs/file.log
+/package-lock.json
+/backend/package-lock.json
 
 # System Files
 .DS_Store
 Thumbs.db
+
+# User Key
+/USER_KEY.txt

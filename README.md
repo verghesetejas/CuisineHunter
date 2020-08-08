@@ -40,6 +40,11 @@ Run the following commands in a new Terminal window, to start the backend -
 * Run the following commands on Terminal or Command prompt, to install dependencies -
   > npm install
 
+## Adding Zomato Developer API User-Key
+* In the Project file, Navigate to "src\app\shared\constants.ts".
+* Here, Add your Zomato Developer API User-Key string -
+  ![User-Key Screenshot](/User-Key_Screenshot.JPG)
+
 ## Start App
 * Run the following command on Terminal or Command prompt, to start the application -
   > npm start
