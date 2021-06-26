@@ -1,5 +1,10 @@
 # Cuisine Hunter
-Angular Project with Zomato API data.
+Search cuisines you like, restaurants you've wanted to visit or just see nearby eateries.
+This is an Angular Project using Zomato API data to search restaurants, cuisines, and anything food related.
+
+## NOTE!
+The scope of this project was to explore and do a PoC on the Zomato Developer API.
+The API has since been discontinued by Zomato.
 
 ## Pre-requisites
 The following should be installed in your system -
